@@ -15,10 +15,3 @@ incrementButton.addEventListener('click', () => {
     countElement.innerText = count;
   }
 });
-
-if (count === 420) {
-    countElement.innerText = "420 BLAZE IT";
-}
-if (count === 69) {
-    countElement.innerText = "69 nice ;)";
-}
