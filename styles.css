@@ -19,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
   }
   
   header {
@@ -70,9 +73,63 @@ body {
   }
   
   button:active {
-    transform: translateY(-3px); /* add an active animation */
-    box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF, 10px 10px 25px #B0B0B0, -10px -10px 25px #FFFFFF;;
+    transform: translateY(0px); /* add an active animation */
+    box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
     transition: transform 0.3s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
   }
   
-  
+  /* CONTAINER */
+
+  .container {
+  width: 200px;
+  height: 400px;
+  background-color: #E7E7E7;
+  border-radius: 25px;
+  overflow: auto;
+  padding: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  box-shadow: 10px 10px 20px #B0B0B0, -10px -10px 20px #FFFFFF;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container a {
+  display: block;
+  text-decoration: none;
+  color: #303030;
+  font-size: 1.2em;
+  -webkit-tap-highlight-color: transparent;
+
+  background-color: #E7E7E7;
+  border-radius: 15px;
+  border: none;
+  box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
+  padding: 15px 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #303030;
+  text-shadow: 2px 2px 5px #B0B0B0;
+  transition: transform 0.2s ease-in-out, box-shadow 0.s ease-in-out;
+}
+
+.container a:hover {
+  transform: translateY(-3px); /* add a hover animation */
+  box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
+}
+
+.container a:active {
+  transform: translateY(0px); /* add an active animation */
+  box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
+  transition: transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
+}
