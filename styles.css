@@ -131,5 +131,5 @@ body {
 .container a:active {
   transform: translateY(0px); /* add an active animation */
   box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
-  transition: transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
 }
