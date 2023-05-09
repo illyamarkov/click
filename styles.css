@@ -1,4 +1,19 @@
+@font-face {
+  font-family: legible-font;
+  src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
 body {
+  font-family: legible-font;
     background-color: #E7E7E7;
     display: flex;
     justify-content: center;
@@ -10,7 +25,7 @@ body {
     background-color: #E7E7E7;
     padding: 30px;
     border-radius: 25px;
-    box-shadow: 10px 10px 20px #B0B0B0, -10px -10px 20px #FFFFFF;
+    box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -23,9 +38,12 @@ body {
     color: #303030;
     text-shadow: 2px 2px 5px #B0B0B0;
   }
+
+  h1 {
+    animation: slide-in 0.5s ease-out infinite alternate;
+  }
   
   h2 {
-    margin-top: 20px; /* add some space between the button and text */
     font-size: 3em;
   }
   
@@ -33,22 +51,27 @@ body {
     background-color: #E7E7E7;
     border-radius: 25px;
     border: none;
-    box-shadow: 10px 10px 20px #B0B0B0, -10px -10px 20px #FFFFFF;
+    box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
     padding: 15px 25px;
-    margin-top: 20px; /* add some space between the text and button */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 1.2em;
     color: #303030;
     text-shadow: 2px 2px 5px #B0B0B0;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
   }
   
   button:hover {
     transform: translateY(-5px); /* add a hover animation */
-    box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+    box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
   }
   
   button:active {
-    transform: translateY(2px); /* add an active animation */
-    box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
+    transform: translateY(-3px); /* add an active animation */
+    box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF, 10px 10px 25px #B0B0B0, -10px -10px 25px #FFFFFF;;
+    transition: transform 0.3s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
   }
+  
   
