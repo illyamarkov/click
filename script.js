@@ -44,7 +44,6 @@ function changeScore(val) {
     const score = snapshot.val();
     console.log(score)
     setScore(score, val)
-    countElement.innerText = score;
   });
 }
 
