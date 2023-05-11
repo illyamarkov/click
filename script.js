@@ -2,39 +2,11 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase
 import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { app, auth } from './firebaseInit.js';
 
-const uiConfig = {
-  callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      return true;
-    },
-    uiShown: function() {
-      document.getElementById('loader').style.display = 'none';
-    }
-  },
-  signInFlow: 'popup',
-  signInSuccessUrl: '<url-to-redirect-to-on-success>',
-  signInOptions: [
-    getAuth.EmailAuthProvider.PROVIDER_ID,
-    getAuth.PhoneAuthProvider.PROVIDER_ID,
-    getAuth.GoogleAuthProvider.PROVIDER_ID,
-    getAuth.FacebookAuthProvider.PROVIDER_ID,
-    getAuth.TwitterAuthProvider.PROVIDER_ID,
-    getAuth.GithubAuthProvider.PROVIDER_ID
-  ],
-  tosUrl: '<your-tos-url>',
-  privacyPolicyUrl: '<your-privacy-policy-url>'
-};
-
-const ui = new firebaseui.auth.AuthUI(auth);
-
-ui.start('#firebaseui-auth-container', uiConfig);
-
 document.getElementById('login-btn').addEventListener('click', function() {
   window.location.href = '/auth';
 });
 
 const db = getDatabase(app);
-
 
 // testing is online
 
@@ -45,7 +17,6 @@ const db = getDatabase(app);
 // });
 
 // -=-=-
-
 
 function writeUserData(userId, name) {
   const db = getDatabase();
@@ -83,9 +54,7 @@ function updateScore() {
   });
 }
 
-
 /* -=-=-=-=-=- CODE -=-=-=-=-=- */
-
 const countElement = document.getElementById('count');
 const incrementButton = document.getElementById('increment-btn');
 const decrementButton = document.getElementById('decrement-btn');
@@ -112,7 +81,6 @@ function update(cnt) {
 }
 
 // POPUP CODE
-
 const popupContainer = document.querySelector('.popup-container');
 const closeBtn = document.querySelector('.close-btn');
 const popupImage = document.querySelector('.popup-image');
@@ -140,7 +108,6 @@ function hidePopup() {
 closeBtn.addEventListener('click', hidePopup);
 
 // CHECK CODE
-
 const intervalId = setInterval(function(){
   console.log(cState);
   if (cState === true){
