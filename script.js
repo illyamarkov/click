@@ -1,13 +1,6 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
-
-//AUTH start
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
-import * as firebaseui from 'https://www.gstatic.com/firebasejs/ui/6.1.1/firebase-ui-auth.js';
-
-const auth = getAuth(app);
-const ui = new firebaseui.auth.AuthUI(auth);
+import { app, auth } from './firebaseInit.js';
 
 const uiConfig = {
   callbacks: {
@@ -21,50 +14,27 @@ const uiConfig = {
   signInFlow: 'popup',
   signInSuccessUrl: '<url-to-redirect-to-on-success>',
   signInOptions: [
-    // List all the providers you want to enable:
-    firebase.auth.EmailAuthProvider.PROVIDER_ID,
-    firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-    firebase.auth.GithubAuthProvider.PROVIDER_ID
+    getAuth.EmailAuthProvider.PROVIDER_ID,
+    getAuth.PhoneAuthProvider.PROVIDER_ID,
+    getAuth.GoogleAuthProvider.PROVIDER_ID,
+    getAuth.FacebookAuthProvider.PROVIDER_ID,
+    getAuth.TwitterAuthProvider.PROVIDER_ID,
+    getAuth.GithubAuthProvider.PROVIDER_ID
   ],
   tosUrl: '<your-tos-url>',
   privacyPolicyUrl: '<your-privacy-policy-url>'
 };
 
 const ui = new firebaseui.auth.AuthUI(auth);
+
 ui.start('#firebaseui-auth-container', uiConfig);
 
 document.getElementById('login-btn').addEventListener('click', function() {
   window.location.href = '/auth';
 });
 
+const db = getDatabase(app);
 
-//AUTH end
-
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCTYO4bnOTM-t4MkJLuTyUcBljBUnBI1eU",
-  authDomain: "click-m.firebaseapp.com",
-  databaseURL: "https://click-m-default-rtdb.firebaseio.com",
-  projectId: "click-m",
-  storageBucket: "click-m.appspot.com",
-  messagingSenderId: "162296528875",
-  appId: "1:162296528875:web:d33fe4891a953e5ef723ae",
-  measurementId: "G-DPD98P54NY"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-const db = getDatabase();
 
 // testing is online
 
