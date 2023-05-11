@@ -2,6 +2,48 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 
+//AUTH start
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+import * as firebaseui from 'https://www.gstatic.com/firebasejs/ui/6.1.1/firebase-ui-auth.js';
+
+const auth = getAuth(app);
+const ui = new firebaseui.auth.AuthUI(auth);
+
+const uiConfig = {
+  callbacks: {
+    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+      return true;
+    },
+    uiShown: function() {
+      document.getElementById('loader').style.display = 'none';
+    }
+  },
+  signInFlow: 'popup',
+  signInSuccessUrl: '<url-to-redirect-to-on-success>',
+  signInOptions: [
+    // List all the providers you want to enable:
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+    firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+    firebase.auth.GithubAuthProvider.PROVIDER_ID
+  ],
+  tosUrl: '<your-tos-url>',
+  privacyPolicyUrl: '<your-privacy-policy-url>'
+};
+
+const ui = new firebaseui.auth.AuthUI(auth);
+ui.start('#firebaseui-auth-container', uiConfig);
+
+document.getElementById('login-btn').addEventListener('click', function() {
+  window.location.href = '/auth';
+});
+
+
+//AUTH end
+
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 

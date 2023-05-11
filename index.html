@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>SIDEQUEST</title>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="icon" type="image/svg+xml" href="assets/ico.svg">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SIDEQUEST</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/ico.svg" />
+  </head>
+  <body>
+    <header>
+      <!-- existing code -->
+      <button id="login-btn">Login</button>
+    </header>
 
-      <div class="popup-container">
-        <div class="popup">
-          <div class="popup-header">
-            <h2 id="errorTYP">Popup Title</h2>
-            <button class="close-btn">&times;</button>
-          </div>
-          <div class="popup-content">
-            <p id="errorMSG">Popup Content Goes Here</p>
-            <div class="popup-image-container">
-              <img class="popup-image" src="" alt="Popup Image">
-            </div>
+    <div class="popup-container">
+      <div class="popup">
+        <div class="popup-header">
+          <h2 id="errorTYP">Popup Title</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="popup-content">
+          <p id="errorMSG">Popup Content Goes Here</p>
+          <div class="popup-image-container">
+            <img class="popup-image" src="" alt="Popup Image" />
           </div>
         </div>
       </div>
-      
-      <div class="container">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
-        <a href="#">Option 4</a>
-        <a href="#">Option 5</a>
-        <a href="#">Option 6</a>
-        <a href="#">Option 7</a>
-        <a href="#">Option 8</a>
-        <a href="#">Option 9</a>
-        <a href="#">Option 10</a>
+    </div>
+
+    <div class="container">
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</a>
+      <a href="#">Option 4</a>
+      <a href="#">Option 5</a>
+      <a href="#">Option 6</a>
+      <a href="#">Option 7</a>
+      <a href="#">Option 8</a>
+      <a href="#">Option 9</a>
+      <a href="#">Option 10</a>
+    </div>
+
+    <header>
+      <h1>SCORE</h1>
+      <h2 id="count">connecting...</h2>
+      <div>
+        <button id="decrement-btn">&minus;</button>
+        <button id="increment-btn">&plus;</button>
       </div>
+    </header>
 
-      <header>
-        <h1>SCORE</h1>
-        <h2 id="count">connecting...</h2> 
-        <div>
-          <button id="decrement-btn">&minus;</button>
-          <button id="increment-btn">&plus;</button>
-        </div> 
-      </header>
-
-      <div class="container">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
-        <a href="#">Option 4</a>
-        <a href="#">Option 5</a>
-        <a href="#">Option 6</a>
-        <a href="#">Option 7</a>
-        <a href="#">Option 8</a>
-        <a href="#">Option 9</a>
-        <a href="#">Option 10</a>
-      </div>
-
-      <script type="module" src="script.js"></script>
-
-    </body>
+    <div class="container">
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</a>
+      <a href="#">Option 4</a>
+      <a href="#">Option 5</a>
+      <a href="#">Option 6</a>
+      <a href="#">Option 7</a>
+      <a href="#">Option 8</a>
+      <a href="#">Option 9</a>
+      <a href="#">Option 10</a>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module">
+      document
+        .getElementById("login-btn")
+        .addEventListener("click", function () {
+          import("./auth.js");
+          window.location.href = "/auth";
+        });
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
