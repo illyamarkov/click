@@ -128,6 +128,7 @@ function hidePopup() {
 closeBtn.addEventListener('click', hidePopup);
 
 // CHECK CODE
+
 const intervalId = setInterval(function(){
   console.log(cState);
   if (cState === true){
