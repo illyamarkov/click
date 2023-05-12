@@ -1,6 +1,20 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
-import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+import { getDatabase, ref, set, get, onValue, onDisconnect } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+
+// const auth = getAuth();
+// createUserWithEmailAndPassword(auth, email, password)
+//   .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+//     // ...
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     // ..
+//   });
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -53,7 +67,7 @@ function changeScore(val) {
   const scoreRef = ref(db, 'score');
   get(scoreRef).then((snapshot) => {
     const score = snapshot.val();
-    console.log(score)
+    // console.log(score)
     setScore(score, val)
   });
 }
@@ -70,6 +84,13 @@ function updateScore() {
     console.log("Error!");
   });
 }
+
+writeUserData("hello", "hey");
+
+get(ref(db, 'users/hello/username')).then((snapshot) => {
+  const score = snapshot.val();
+  // console.log(score)
+});
 
 
 /* -=-=-=-=-=- CODE -=-=-=-=-=- */
@@ -129,13 +150,31 @@ closeBtn.addEventListener('click', hidePopup);
 
 // CHECK CODE
 
-const intervalId = setInterval(function(){
-  console.log(cState);
-  if (cState === true){
-    updateScore();
-  }
-  else {
-    clearInterval(intervalId);
-    showPopup("Server: :(", "The server failed to respond... it's probably down due to maintainance or player overload. \n \n Try refreshing the page. You will not automatically reconnect. \n \n In the meantime, look at this adorable cat and dog:", "/assets/catdog.svg");
-  }
-}, 100);
+// const intervalId = setInterval(function(){
+//   console.log(cState);
+//   if (cState === true){
+//     updateScore();
+//   }
+//   else {
+//     clearInterval(intervalId);
+//     showPopup("Server: :(", "The server failed to respond... it's probably down due to maintainance or player overload. \n \n Try refreshing the page. You will not automatically reconnect. \n \n In the meantime, look at this adorable cat and dog:", "/assets/catdog.svg");
+//   }
+// }, 100);
+
+const scoreRef = ref(db, 'score');
+
+onValue(scoreRef, (snapshot) => {
+  const score = snapshot.val();
+  countElement.innerText = score;
+}, {
+  onlyOnce: false // Keep the listener active after the initial data is retrieved
+});
+
+
+// onRejected(scoreRef, (error) => {
+//   if (error.code === "permission_denied") {
+//     showPopup("Access Denied", "You do not have permission to access the score data. \n \n Please contact an administrator for assistance.", "/assets/access_denied.svg");
+//   } else {
+//     showPopup("Error", "An error occurred while trying to retrieve the score data. \n \n Please try again later.", "/assets/error.svg");
+//   }
+// });
