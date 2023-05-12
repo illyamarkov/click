@@ -1,27 +1,8 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+import { app } from './firebaseConfig';
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCTYO4bnOTM-t4MkJLuTyUcBljBUnBI1eU",
-  authDomain: "click-m.firebaseapp.com",
-  databaseURL: "https://click-m-default-rtdb.firebaseio.com",
-  projectId: "click-m",
-  storageBucket: "click-m.appspot.com",
-  messagingSenderId: "162296528875",
-  appId: "1:162296528875:web:d33fe4891a953e5ef723ae",
-  measurementId: "G-DPD98P54NY"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
 const db = getDatabase();
 
 // testing is online
