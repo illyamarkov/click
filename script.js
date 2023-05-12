@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
-import { getDatabase, ref, set, get, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+import { getDatabase, ref, get, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 
 // const auth = getAuth();
@@ -51,6 +51,7 @@ const db = getDatabase();
 
 function writeUserData(userId, name) {
   const db = getDatabase();
+  console.log("Hello!");
   set(ref(db, 'users/' + userId), {
     username: name
   });
@@ -77,7 +78,7 @@ function changeScore(val) {
   runTransaction(scoreRef, (currentScore) => {
     return currentScore + val;
   }).catch((error) => {
-    showPopup("Server: :(", "The server failed to respond... it's probably down due to maintainance or player overload. \n \n Try refreshing the page. You will not automatically reconnect. \n \n In the meantime, look at this adorable cat and dog:", "/assets/catdog.svg");
+    // showPopup("Server: :(", "The server failed to respond... it's probably down due to maintainance or player overload. \n \n Try refreshing the page. You will not automatically reconnect. \n \n In the meantime, look at this adorable cat and dog:", "/assets/catdog.svg");
   });
 }
 
@@ -93,8 +94,6 @@ function updateScore() {
     console.log("Error!");
   });
 }
-
-writeUserData("hello", "hey");
 
 get(ref(db, 'users/hello/username')).then((snapshot) => {
   const score = snapshot.val();
