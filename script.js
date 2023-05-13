@@ -1,3 +1,18 @@
+const switchInput = document.querySelector('#switch');
+const linkTag = document.querySelector('link');
+
+switchInput.addEventListener('change', () => {
+  if (switchInput.checked) {
+    linkTag.setAttribute('href', 'styles-dark.css');
+  } else {
+    linkTag.setAttribute('href', 'styles-light.css');
+  }
+});
+
+
+// -=-=-=-=- CODE -=-=-=-=-
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 import { getDatabase, ref, get, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";

@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: legible-font;
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
@@ -21,7 +23,7 @@ body {
     height: 100vh;
     overflow: hidden;
     scroll-behavior: smooth;
-
+    transition: all 0.4s ease-in-out;
   }
   
   header {
@@ -33,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.4s ease-in-out;
   }
   
   h1, h2 {
@@ -40,10 +43,12 @@ body {
     font-size: 2em;
     color: #303030;
     text-shadow: 2px 2px 5px #B0B0B0;
+    transition: all 0.4s ease-in-out;
   }
 
   p {
     color: #303030;
+    transition: all 0.4s ease-in-out;
   }
 
   h1 {
@@ -67,18 +72,22 @@ body {
     font-size: 2em;
     color: #303030;
     text-shadow: 2px 2px 5px #B0B0B0;
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   
   button:hover {
     transform: translateY(-5px); /* add a hover animation */
     box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+    transition: all 0.4s ease-in-out;
+
     transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
   }
   
   button:active {
     transform: translateY(0px); /* add an active animation */
     box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
+    transition: all 0.4s ease-in-out;
+
     transition: transform 0.3s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
   }
   
@@ -98,6 +107,8 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
+  transition: all 0.4s ease-in-out;
+
 }
 
 .container::-webkit-scrollbar {
@@ -123,18 +134,22 @@ body {
   font-size: 1.2em;
   color: #303030;
   text-shadow: 2px 2px 5px #B0B0B0;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .container a:hover {
   transform: translateY(-3px); /* add a hover animation */
   box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+  transition: all 0.4s ease-in-out;
+
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
 }
 
 .container a:active {
   transform: translateY(0px); /* add an active animation */
   box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
+  transition: all 0.4s ease-in-out;
+
   transition: transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
 }
 
@@ -153,7 +168,9 @@ body {
   align-items: center;
 
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  transition: opacity 0.4s ease-in-out;
 }
 
 .popup {
@@ -163,6 +180,7 @@ body {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  transition: all 0.4s ease-in-out;
 }
 
 .popup-header {
@@ -171,6 +189,7 @@ body {
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #d9d9d9;
+  transition: all 0.4s ease-in-out;
 }
 
 .popup-header h2 {
@@ -200,4 +219,58 @@ body {
   max-width: 100%;
   max-height: 50px;
   object-fit: contain;
+}
+
+/* SWITCH */
+
+.switch-container {
+  display: inline-block;
+  position: absolute;
+  width: 48px;
+  height: 24px;
+  top: 20px;
+  right: 20px;
+}
+
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #E7E7E7;
+  box-shadow: inset 6px 6px 12px #B0B0B0, 
+              inset -6px -6px 12px #FFFFFF,
+              6px 6px 12px #B0B0B0, 
+              -6px -6px 12px #FFFFFF;
+              
+  transition: all 0.4s ease-in-out;
+}
+
+.switch:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #303030;
+  box-shadow: inset -6px -6px 12px #131415, 
+              inset 6px 6px 12px #393b41,
+              2px 2px 5px #B0B0B0;
+  transition: all 0.4s ease-in-out;
+}
+
+.switch-container input:checked + .switch:before {
+  transform: translateX(24px);
 }
