@@ -10,12 +10,12 @@ switchInput.addEventListener('change', () => {
 });
 
 
-// -=-=-=-=- CODE -=-=-=-=-
+// -=-=-=-=- CODE -=-=-=-=- 
 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
-import { getDatabase, ref, get, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+import { getDatabase, ref, get, onValue, runTransaction, set } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 
 // const auth = getAuth();
@@ -51,7 +51,44 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+// const auth = getAuth(app);
+
 const db = getDatabase();
+
+// -=-=-=-=- AUTH -=-=-=-=-
+
+
+
+// function createUserOnDB(uid, name, email) {
+//   const db = getDatabase();
+//   console.log("Hello!");
+//   set(ref(db, 'users/' + name), {
+//     uid: uid,
+//     email: email,
+
+//   });
+// }
+
+// var email = "cat@test.com";
+// var password = "samplepassword";
+
+// createUserWithEmailAndPassword(auth, email, password)
+//   .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+    
+//     // Store user data in the Realtime Database
+//     createUserOnDB(user.uid, "cat", email);
+//     // ...
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     // ..
+//   });
+
+// =-=-=-=-= END AUTH =-=-=-=-=
+
 
 // testing is online
 
@@ -64,13 +101,6 @@ const db = getDatabase();
 // -=-=-
 
 
-function writeUserData(userId, name) {
-  const db = getDatabase();
-  console.log("Hello!");
-  set(ref(db, 'users/' + userId), {
-    username: name
-  });
-}
 
 function setScore(score, val) {
   const db = getDatabase();
