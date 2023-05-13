@@ -1,11 +1,12 @@
+//dark-light mode switch
 const switchInput = document.querySelector('#switch');
 const linkTag = document.querySelector('link');
 
 switchInput.addEventListener('change', () => {
   if (switchInput.checked) {
-    linkTag.setAttribute('href', 'styles-dark.css');
+    linkTag.setAttribute('href', 'css/styles-dark.css');
   } else {
-    linkTag.setAttribute('href', 'styles-light.css');
+    linkTag.setAttribute('href', 'css/styles-light.css');
   }
 });
 
