@@ -10,7 +10,7 @@ switchInput.addEventListener('change', () => {
 });
 
 
-// -=-=-=-=- CODE -=-=-=-=- 
+// -=-=-=-=- CODE -=-=-=-=-
 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
