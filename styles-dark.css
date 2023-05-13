@@ -269,8 +269,8 @@
 .switch-container {
   display: inline-block;
   position: absolute;
-  width: 48px;
-  height: 24px;
+  width: 72px;
+  height: 36px;
   top: 20px;
   right: 20px;
 }
@@ -301,10 +301,10 @@
   content: '';
   display: block;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
+  top: 3px;
+  left: 3px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #e0e0e0;
   box-shadow: inset -6px -6px 12px #B0B0B0, 
@@ -314,5 +314,5 @@
 }
 
 .switch-container input:checked + .switch:before {
-  transform: translateX(24px);
+  transform: translateX(36px);
 }
