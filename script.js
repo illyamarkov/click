@@ -139,3 +139,4 @@ const intervalId = setInterval(function(){
     showPopup("Server: :(", "The server failed to respond... it's probably down due to maintainance or player overload. \n \n Try refreshing the page. You will not automatically reconnect. \n \n In the meantime, look at this adorable cat and dog:", "/assets/catdog.svg");
   }
 }, 100);
+
