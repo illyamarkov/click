@@ -1,3 +1,4 @@
+//dark-light mode switch
 const switchInput = document.querySelector('#switch');
 const linkTag = document.querySelector('link');
 

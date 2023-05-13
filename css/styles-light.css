@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: legible-font;
-  src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+  src: url('../fonts/AtkinsonHyperlegible-Bold.ttf');
 }
 
 @keyframes slide-in {
