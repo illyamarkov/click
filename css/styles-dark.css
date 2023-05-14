@@ -2,16 +2,7 @@
   font-family: legible-font;
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
 }
-}
   
-@keyframes slide-in {
-from {
-transform: translateY(-2px);
-}
-to {
-transform: translateY(2px);
-}
-}
 @keyframes slide-in {
 from {
 transform: translateY(-2px);
@@ -44,10 +35,7 @@ header {
   align-items: center;
   transition: all 0.4s ease-in-out;
 }
-}
   
-h1,
-h2 {
 h1,
 h2 {
   margin: 0;
@@ -56,26 +44,19 @@ h2 {
   text-shadow: 2px 2px 5px #202022;
   transition: all 0.4s ease-in-out;
 }
-}
   
-p {
 p {
   color: #e0e0e0;
   transition: all 0.4s ease-in-out;
 }
-}
   
-h1 {
 h1 {
   animation: slide-in 0.5s ease infinite alternate;
 }
-}
   
-h2 {
 h2 {
   font-size: 3em;
   z-index: 1;
-}
 }
   
 button {
@@ -92,18 +73,14 @@ button {
   text-shadow: 2px 2px 5px #202022;
   transition: all 0.4s ease-in-out;
 }
-}
   
-button:hover {
 button:hover {
   transform: translateY(-5px);
   box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
   transition: all 0.4s ease-in-out;
   transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-}
   
-button:active {
 button:active {
   transform: translateY(0px);
   box-shadow: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b;
