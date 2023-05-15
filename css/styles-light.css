@@ -17,10 +17,8 @@
   }
 }
 
-
-
 body, header, button, .container a {
-  background-color: var(--default-background);
+  background-color: var(--background-light);
   transition: var(--default-transition);
 }
 
@@ -37,7 +35,7 @@ body {
 header {
   padding: 30px;
   border-radius: 25px;
-  box-shadow: var(--default-box-shadow);
+  box-shadow: var(--box-shadow-light);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -45,8 +43,8 @@ header {
 }
   
 h1, h2, p, button, .container a {
-  color: var(--default-color);
-  text-shadow: var(--default-text-shadow);
+  color: var(--color-light);
+  text-shadow: var(--text-shadow-light);
 }
 
 h1, h2 {
@@ -67,7 +65,7 @@ h2 {
 button, .container a {
   border-radius: 25px;
   border: none;
-  box-shadow: var(--default-box-shadow);
+  box-shadow: var(--box-shadow-light);
   padding: var(--default-padding);
   margin: var(--default-margin);
   font-size: 2em;
@@ -75,17 +73,16 @@ button, .container a {
   
 button:hover {
   transform: var(--hover-transform);
-  box-shadow: var(--hover-box-shadow);
+  box-shadow: var(--hover-box-shadow-light);
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
 }
 
 button:active {
   transform: var(--active-transform);
-  box-shadow: var(--active-box-shadow);
+  box-shadow: var(--active-box-shadow-light);
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
 }
 
-  
   /* CONTAINER */
 
   .container {
