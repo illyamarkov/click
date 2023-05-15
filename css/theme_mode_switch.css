@@ -2,6 +2,7 @@
 
 .switch-container {
     flex: auto;
+    position: relative;
     display: inline-block;
     width: 72px;
     height: 36px;
@@ -12,15 +13,13 @@
     width: 0;
     height: 0;
   }
-  
+
   .switch {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: #E7E7E7;
     box-shadow: inset 6px 6px 12px #B0B0B0, 
                 inset -6px -6px 12px #FFFFFF,
