@@ -24,8 +24,7 @@
     height: 100%;
     border-radius: 50px;
     background-color: #E7E7E7;
-    box-shadow: inset 6px 6px 12px #B0B0B0, 
-                inset -6px -6px 12px #FFFFFF,
+    box-shadow: var(--active-box-shadow-light),
                 6px 6px 12px #B0B0B0, 
                 -6px -6px 12px #FFFFFF;
     transition: var(--default-transition);
@@ -41,8 +40,7 @@
     height: 30px;
     border-radius: 50%;
     background-color: #303030;
-    box-shadow: inset -6px -6px 12px #131415, 
-                inset 6px 6px 12px #393b41,
+    box-shadow: var(--active-box-shadow-dark),
                 2px 2px 5px #B0B0B0;
     transition: var(--default-transition);
   }
