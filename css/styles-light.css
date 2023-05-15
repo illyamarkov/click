@@ -4,7 +4,6 @@
   --default-background:#E7E7E7;
   --default-box-shadow:12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
   --default-color:#303030;
-  --default-font:legible-font;
   --default-margin:10px;
   --default-padding:15px 25px;
   --default-text-shadow:2px 2px 5px #B0B0B0;
@@ -300,6 +299,9 @@ button:active {
 /* CHATBOX */
 
 #chatbox {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
   width: 200px;
   height: 480px;
   box-shadow: inset 6px 6px 12px #B0B0B0, 
@@ -310,10 +312,7 @@ button:active {
   width: auto;
   height: auto;
   border-radius: 15px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   box-shadow: 
               6px 6px 12px #B0B0B0, 
               -6px -6px 12px #FFFFFF;
