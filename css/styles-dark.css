@@ -28,6 +28,11 @@
   box-shadow: var(--box-shadow-dark);
 }
 
+#chatbox {
+  background-color: var(--background-dark);
+  box-shadow: var(--box-shadow-dark);
+}
+
 .switch:before {
   background-color: var(--color-dark);
 }
