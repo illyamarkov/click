@@ -124,32 +124,3 @@ button:active {
 .container::-webkit-scrollbar {
   display: none;
 }
-
-.container a {
-  display: block;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-  background-color: var(--background-dark);
-  border-radius: 15px;
-  border: none;
-  box-shadow: var(--box-shadow-dark);
-  padding: var(--default-padding);
-  margin: 10px;
-  margin-top: 30px;
-  font-size: 1.2em;
-  color: var(--color-dark);
-  text-shadow: var(--text-shadow-dark);
-  transition: var(--default-transition);
-}
-
-.container a:hover {
-  transform: translateY(-3px); /* add a hover animation */
-  box-shadow: var(--box-shadow-dark);
-  transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.container a:active {
-  transform: translateY(0px); /* add an active animation */
-  box-shadow: var(--active-box-shadow-dark);
-  transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out;
-}

@@ -1,6 +1,5 @@
 @import "theme_mode_switch.css";
 
-/* top menu bar */
 .menu-bar {
     height:6vh;
     padding: 10px;
@@ -15,7 +14,6 @@
     gap: 20px;
   }
   
-  /* login button */
   .login-container {
     display: flex;
     align-items: center;

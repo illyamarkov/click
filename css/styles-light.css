@@ -73,13 +73,13 @@ h1, h2 {
 h1 {
   animation: slide-in 0.5s ease infinite alternate;
 }
-  
+
 h2 {
   font-size: 3em;
   z-index: 1;
 }
-  
-button, .container a {
+
+button {
   border-radius: 25px;
   border: none;
   box-shadow: var(--box-shadow-light);
@@ -100,8 +100,7 @@ button:active {
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
 }
 
-  /* CONTAINER */
-  .container {
+.container {
   width: 200px;
   height: 200px;
   background-color:var(--background-light);
@@ -119,35 +118,4 @@ button:active {
 
 .container::-webkit-scrollbar {
   display: none;
-}
-
-.container a {
-  display: block;
-  text-decoration: none;
-  color: var(--color-light);
-  font-size: 1.2em;
-  -webkit-tap-highlight-color: transparent;
-  background-color: var(--background-light);
-  border-radius: 15px;
-  border: none;
-  box-shadow: var(--hover-box-shadow-light), 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
-  padding: var(--default-padding);
-  margin: 10px;
-  margin-top: 30px;
-  font-size: 1.2em;
-  color: var(--color-light);
-  text-shadow: var(--text-shadow-light);
-  transition: var(--default-transition);
-}
-
-.container a:hover {
-  transform: translateY(-3px); /* add a hover animation */
-  box-shadow: var(--box-shadow-light);
-  transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.container a:active {
-  transform: translateY(0px); /* add an active animation */
-  box-shadow: var(--active-box-shadow-light);
-  transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out;
 }
