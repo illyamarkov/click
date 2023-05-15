@@ -22,44 +22,42 @@
   box-shadow:var(--box-shadow-dark);
 }
 
-  body {
+body, header, button, .container a {
+  background-color: var(--background-dark);
+  transition: var(--default-transition);
+}
+
+body {
   font-family: legible-font;
-  background-color: #313236;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
   scroll-behavior: smooth;
-  transition: all 0.4s ease-in-out;
-  }
+}
   
 header {
-  background-color: #313236;
   padding: 30px;
   border-radius: 25px;
-  box-shadow: 12px 12px 25px #202022, -12px -12px 25px #38393b;
+  box-shadow: var(--box-shadow-dark);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.4s ease-in-out;
 }
   
-h1,
-h2 {
+h1, h2, p, button, .container a {
+  color: var(--color-dark);
+  text-shadow: var(--text-shadow-dark);
+}
+
+h1, h2 {
   margin: 0;
   font-size: 2em;
-  color: #e0e0e0;
-  text-shadow: 2px 2px 5px #202022;
-  transition: all 0.4s ease-in-out;
+  transition: var(--default-transition);
 }
-  
-p {
-  color: #e0e0e0;
-  transition: all 0.4s ease-in-out;
-}
-  
+
 h1 {
   animation: slide-in 0.5s ease infinite alternate;
 }
@@ -69,37 +67,28 @@ h2 {
   z-index: 1;
 }
   
-button {
-  background-color: #313236;
+button, .container a {
   border-radius: 25px;
   border: none;
-  box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 5px 5px 15px #202022, -5px -5px 15px #38393b;
-  padding: 15px 25px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  box-shadow: var(--box-shadow-dark);
+  padding: var(--default-padding);
+  margin: var(--default-margin);
   font-size: 2em;
-  color: #e0e0e0;
-  text-shadow: 2px 2px 5px #202022;
-  transition: all 0.4s ease-in-out;
 }
-  
-button:hover {
-  transform: translateY(-5px);
-  box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
-  transition: all 0.4s ease-in-out;
-  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-  
-button:active {
-  transform: translateY(0px);
-  box-shadow: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b;
-  transition: all 0.4s ease-in-out;
-  transition: transform 0.3s ease-in-out, box-shadow 0.05s ease-in-out;
-}
-  
-/* CONTAINER */
 
+button:hover {
+  transform: var(--hover-transform);
+  box-shadow: var(--hover-box-shadow-dark);
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+button:active {
+  transform: var(--active-transform);
+  box-shadow: var(--active-box-shadow-dark);
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
+}
+
+/* CONTAINER */
 .container {
   width: 200px;
   height: 200px;
