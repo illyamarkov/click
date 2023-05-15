@@ -31,7 +31,7 @@
 /* Dark/Light Mode Switch Container */
 #menu-bar .switch-container {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 /* Login Button Container */
