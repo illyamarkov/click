@@ -1,6 +1,7 @@
 @import "vars.css";
 @import "top_menu.css";
 @import "popup.css";
+@import "chatbox.css";
 
 /* font */
 @font-face {
@@ -27,9 +28,7 @@
 .switch {
   background-color: var(--background-light);
   box-shadow: var(--box-shadow-light);
-  transition: var(--default-transition);
 }
-
 .switch:before {
   background-color: var(--color-light);
 }
@@ -150,29 +149,4 @@ button:active {
   transform: translateY(0px); /* add an active animation */
   box-shadow: var(--active-box-shadow-light);
   transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out;
-}
-
-/* CHATBOX */
-#chatbox {
-  position: relative;
-  width: 200px;
-  height: 480px;
-  box-shadow: var(--active-box-shadow-light);
-}
-
-#island {
-  width: auto;
-  height: auto;
-  border-radius: 15px;
-  margin: 10px;
-  box-shadow: 
-              6px 6px 12px #B0B0B0, 
-              -6px -6px 12px #FFFFFF;
-}
-
-.island {
-  height: calc(100% - 40px); /* adjust this value as needed */
-  overflow-y: auto; /* enable vertical scrolling if needed */
-  animation: none;
-  text-align: center;
 }
