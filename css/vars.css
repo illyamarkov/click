@@ -12,7 +12,7 @@
   --default-padding:15px 25px;
   --text-shadow-light:2px 2px 5px #B0B0B0;
   --text-shadow-dark:2px 2px 5px #202022;
-  --default-transition:all .2s ease-in-out, box-shadow .4s ease-in-out;
+  --default-transition:all .4s ease-in-out;
   --hover-box-shadow-light:inset 0 0 0 #B0B0B0,inset 0 0 0 #FFFFFF,12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
   --hover-box-shadow-dark:inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
   --hover-transform:translateY(-5px)
