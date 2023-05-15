@@ -34,10 +34,6 @@
   gap: 20px;
 }
 
-.login-container {
-  height: 35px;
-}
-
 body, header, button, .container a {
   background-color: var(--default-background);
   transition: var(--default-transition);
