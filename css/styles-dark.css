@@ -31,7 +31,7 @@
 
 #chatbox {
   background-color: var(--background-dark);
-  box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--active-box-shadow-dark);
 }
 
 .switch:before {

@@ -2,7 +2,7 @@
     position: relative;
     width: 200px;
     height: 480px;
-    box-shadow: var(--active-box-shadow-light);
+    transition: var(--default-transition);
   }
   
   #island {
