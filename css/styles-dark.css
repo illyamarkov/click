@@ -1,3 +1,20 @@
+:root {
+  --active-box-shadow:inset 6px 6px 12px #B0B0B0,inset -6px -6px 12px #FFF;
+  --active-transform:translateY(0px);
+  --default-background:#E7E7E7;
+  --default-box-shadow:12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
+  --default-color:#303030;
+  --default-font:legible-font;
+  --default-margin:10px;
+  --default-padding:15px 25px;
+  --default-text-shadow:2px 2px 5px #B0B0B0;
+  --default-transition:all .4s ease-in-out;
+  --hover-box-shadow:inset 0 0 0 #B0B0B0,inset 0 0 0 #FFFFFF,12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
+  --hover-transform:translateY(-5px)
+  }
+}
+
+
 @font-face {
   font-family: legible-font;
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
@@ -25,7 +42,7 @@ transform: translateY(2px);
   transition:var(--default-transition);
   width:100%
   }
-  
+
   body {
   font-family: legible-font;
   background-color: #313236;
