@@ -2,6 +2,7 @@
 @import "top_menu.css";
 @import "popup.css";
 @import "chatbox.css";
+@import "global_upgrades.css";
 
 @font-face {
   font-family: legible-font;
@@ -127,7 +128,6 @@ button:active {
 .container a {
   display: block;
   text-decoration: none;
-  font-size: 1.2em;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--background-dark);
   border-radius: 15px;
