@@ -22,6 +22,14 @@
   box-shadow:var(--box-shadow-dark);
 }
 
+.switch {
+  background-color: #ff1414;
+  box-shadow: var(--active-box-shadow-light),
+              6px 6px 12px #B0B0B0, 
+              -6px -6px 12px #FFFFFF;
+  transition: var(--default-transition);
+}
+
 body, header, button, .container a {
   background-color: var(--background-dark);
   transition: var(--default-transition);
