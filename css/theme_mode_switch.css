@@ -14,7 +14,7 @@
   width: 0;
   height: 0;
 }
-  
+
 .switch {
   display: inline-block;
   position: relative;
@@ -39,11 +39,11 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #303030;
   box-shadow: var(--active-box-shadow-dark), 2px 2px 5px #B0B0B0;
   transition: var(--default-transition);
 }
   
 .switch-container input:checked + .switch:before {
+  background-color: #303030;
   transform: translateX(28px);
 }
