@@ -34,7 +34,7 @@
 }
 
 .spacer {
-  width: 50px;
+  flex: 5;
 }
 
 body, header, button, .container a {
