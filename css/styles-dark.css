@@ -28,11 +28,9 @@
   }
 }
 
-
-
 /* top menu bar */
 #menu-bar {
-  background-color:var(--default-background);
+  background-color: #313236;
   box-shadow:var(--default-box-shadow);
   display:flex;
   height:50px;
@@ -249,8 +247,6 @@ button:active {
 }
 
 /* SWITCH */
-
-
 
 .switch {
   background-color: #313236;
