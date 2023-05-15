@@ -120,32 +120,26 @@ button:active {
   background-color: var(--background-light);
   border-radius: 15px;
   border: none;
-  box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
-  padding: 15px 25px;
+  box-shadow: var(--hover-box-shadow-light), 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
+  padding: var(--default-padding);
+  margin: 10px;
   margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
   font-size: 1.2em;
-  color: #303030;
-  text-shadow: 2px 2px 5px #B0B0B0;
+  color: var(--color-light);
+  text-shadow: var(--text-shadow-light);
   transition: var(--default-transition);
 }
 
 .container a:hover {
   transform: translateY(-3px); /* add a hover animation */
-  box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
-  transition: var(--default-transition);
-
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
+  box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+  transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .container a:active {
   transform: translateY(0px); /* add an active animation */
   box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
-  transition: var(--default-transition);
-
-  transition: transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
+  transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out;
 }
 
 /* -=-=-=-=- OVERLAY CSS -=-=-=-=- */
