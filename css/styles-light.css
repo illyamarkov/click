@@ -1,13 +1,23 @@
 :root {
   --default-transition: all 0.4s ease-in-out;
+  --default-background: #E7E7E7;
+  --default-box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+  --default-text-shadow: 2px 2px 5px #B0B0B0;
+  --default-color: #303030;
+  --default-font: 'legible-font';
+  --default-padding: 15px 25px;
+  --default-margin: 10px;
+  --hover-transform: translateY(-5px);
+  --hover-box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
+  --active-transform: translateY(0px);
+  --active-box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
 }
 
 /* font */
 @font-face {
-  font-family: 'legible-font';
+  font-family: var(--default-font);
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
 }
-
 
 /* slide animation */
 @keyframes slide-in {
@@ -25,41 +35,49 @@
   top: 0;
   right: 0;
   display: flex;
-  justify-content: space-between, right; /* distribute items evenly */
+  justify-content: space-between; /* distribute items evenly */
   align-items: center;
   width: 100%;
   height: 60px; /* adjust as needed */
   padding: 10px 30px;
-  background-color: #E7E7E7;
-  box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
-  transition: --default-transition;
-} 
+  background-color: var(--default-background);
+  box-shadow: var(--default-box-shadow);
+  transition: var(--default-transition);
+}
+
+body, header, button, .container a {
+  background-color: var(--default-background);
+  transition: var(--default-transition);
+}
+
 
 
 body {
-  font-family: legible-font;
-    background-color: #E7E7E7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    transition: --default-transition;
-  }
+  font-family: var(--default-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
   
-  header {
-    background-color: #E7E7E7;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: --default-transition;
-  }
+header {
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: var(--default-box-shadow);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
+h1, h2, p {
+  color: var(--default-color);
+  text-shadow: var(--default-text-shadow);
+}
+
   h1, h2 {
     margin: 0;
     font-size: 2em;
@@ -82,35 +100,33 @@ body {
     z-index: 1;
   }
   
-  button {
-    background-color: #E7E7E7;
+  button, .container a {
     border-radius: 25px;
     border: none;
     box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
-    padding: 15px 25px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: var(--default-padding);
+    margin: var(--default-margin);
     font-size: 2em;
-    color: #303030;
-    text-shadow: 2px 2px 5px #B0B0B0;
-    transition: --default-transition;
+    color: var(--default-color);
+    text-shadow: var(--default-text-shadow);
   }
   
   button:hover {
     transform: translateY(-5px); /* add a hover animation */
     box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
-    transition: --default-transition;
-
-    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
+    transition: 
+      --default-transition,
+      transform .3s ease-in-out,
+      box-shadow .2s ease-in-out;
   }
   
   button:active {
     transform: translateY(0px); /* add an active animation */
     box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
-    transition: --default-transition;
-
-    transition: transform 0.3s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
+    transition: 
+      --default-transition,
+      transform .3s ease-in-out,
+      box-shadow .05s ease-in-out;
   }
   
   /* CONTAINER */
@@ -276,7 +292,7 @@ body {
               6px 6px 12px #B0B0B0, 
               -6px -6px 12px #FFFFFF;
               
-  transition: all 0.4s ease-in-out;
+  transition: --default-transition;
 }
 
 .switch:before {
@@ -292,7 +308,7 @@ body {
   box-shadow: inset -6px -6px 12px #131415, 
               inset 6px 6px 12px #393b41,
               2px 2px 5px #B0B0B0;
-  transition: all 0.4s ease-in-out;
+  transition: --default-transition;
 }
 
 .switch-container input:checked + .switch:before {
