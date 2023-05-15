@@ -1,4 +1,4 @@
-/* SWITCH */
+
 
 .switch-container {
     display: inline-block;
@@ -28,7 +28,6 @@
                 inset -6px -6px 12px #FFFFFF,
                 6px 6px 12px #B0B0B0, 
                 -6px -6px 12px #FFFFFF;
-                
     transition: var(--default-transition);
   }
   
