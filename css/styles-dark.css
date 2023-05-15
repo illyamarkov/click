@@ -140,24 +140,6 @@ button:active {
   transition: var(--default-transition), transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out;
 }
 
-/* SWITCH */
-.switch {
-  background-color: #313236;
-  box-shadow: inset 6px 6px 12px #202022, 
-              inset -6px -6px 12px #38393b,
-              6px 6px 12px #202022, 
-              -6px -6px 12px #38393b;
-  transition: all 0.4s ease-in-out;
-}
-
-.switch:before {
-  background-color: #e0e0e0;
-  box-shadow: inset -6px -6px 12px #B0B0B0, 
-              inset 6px 6px 12px #FFFFFF,
-              -2px -2px 5px #202022;
-  transition: all 0.4s ease-in-out;
-}
-
 /* CHATBOX */
 
 #chatbox {

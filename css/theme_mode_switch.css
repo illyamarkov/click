@@ -1,49 +1,49 @@
 @import "vars.css";
 
 .switch-container {
-    margin: 10px;
-    flex: 1;
-    max-width: 72px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-  }
+  margin: 10px;
+  flex: 1;
+  max-width: 72px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
   
-  .switch-container input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
   
-  .switch {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    background-color: #E7E7E7;
-    box-shadow: var(--active-box-shadow-light),
-                6px 6px 12px #B0B0B0, 
-                -6px -6px 12px #FFFFFF;
-    transition: var(--default-transition);
-  }
+.switch {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #E7E7E7;
+  box-shadow: var(--active-box-shadow-light),
+              6px 6px 12px #B0B0B0, 
+              -6px -6px 12px #FFFFFF;
+  transition: var(--default-transition);
+}
   
-  .switch:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #303030;
-    box-shadow: var(--active-box-shadow-dark), 2px 2px 5px #B0B0B0;
-    transition: var(--default-transition);
-  }
+.switch:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #303030;
+  box-shadow: var(--active-box-shadow-dark), 2px 2px 5px #B0B0B0;
+  transition: var(--default-transition);
+}
   
-  .switch-container input:checked + .switch:before {
-    transform: translateX(28px);
-  }
+.switch-container input:checked + .switch:before {
+  transform: translateX(28px);
+}
