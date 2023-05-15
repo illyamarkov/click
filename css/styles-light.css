@@ -21,7 +21,7 @@
 /* top menu bar */
 .menu-bar {
   background-color:var(--background-light);
-  box-shadow:var(--box-shadow-light);
+  box-shadow:var(--active-box-shadow-light);
 }
 
 body, header, button, .container a {
