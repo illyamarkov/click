@@ -237,9 +237,7 @@ button:active {
 /* CHATBOX */
 
 #chatbox {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
+  position: relative;
   width: 200px;
   height: 480px;
   box-shadow: inset 6px 6px 12px #B0B0B0, 
