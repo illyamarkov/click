@@ -39,21 +39,20 @@
   align-items: center;
   width: 100%;
   height: 60px; /* adjust as needed */
-  padding: 10px 30px;
+  padding: var(--default-padding);
   background-color: var(--default-background);
   box-shadow: var(--default-box-shadow);
   transition: var(--default-transition);
 }
 
+
 body, header, button, .container a {
+  font-family: var(--default-font);
   background-color: var(--default-background);
   transition: var(--default-transition);
 }
 
-
-
 body {
-  font-family: var(--default-font);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +61,6 @@ body {
   scroll-behavior: smooth;
 }
 
-  
 header {
   padding: 30px;
   border-radius: 25px;
@@ -73,43 +71,34 @@ header {
   align-items: center;
 }
   
-h1, h2, p {
+h1, h2, p, button, .container a {
   color: var(--default-color);
   text-shadow: var(--default-text-shadow);
 }
 
-  h1, h2 {
-    margin: 0;
-    font-size: 2em;
-    color: #303030;
-    text-shadow: 2px 2px 5px #B0B0B0;
-    transition: --default-transition;
-  }
+h1, h2 {
+  margin: 0;
+  font-size: 2em;
+  transition: var(--default-transition);
+}
 
-  p {
-    color: #303030;
-    transition: --default-transition;
-  }
-
-  h1 {
-    animation: slide-in 0.5s ease infinite alternate;
-  }
+h1 {
+  animation: slide-in 0.5s ease infinite alternate;
+}
   
-  h2 {
-    font-size: 3em;
-    z-index: 1;
-  }
+h2 {
+  font-size: 3em;
+  z-index: 1;
+}
   
-  button, .container a {
-    border-radius: 25px;
-    border: none;
-    box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
-    padding: var(--default-padding);
-    margin: var(--default-margin);
-    font-size: 2em;
-    color: var(--default-color);
-    text-shadow: var(--default-text-shadow);
-  }
+button, .container a {
+  border-radius: 25px;
+  border: none;
+  box-shadow: var(--default-box-shadow);
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  font-size: 2em;
+}
   
   button:hover {
     transform: translateY(-5px); /* add a hover animation */
