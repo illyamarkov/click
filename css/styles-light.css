@@ -13,7 +13,7 @@
 }
 
 /* Menu Bar */
-#menu-bar {
+.menu-bar {
   position: fixed;
   top: 0;
   right: 0;
