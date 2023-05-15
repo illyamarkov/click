@@ -24,9 +24,7 @@
 
 .switch {
   background-color: var(--background-dark);
-  box-shadow: var(--active-box-shadow-dark),
-              6px 6px 12px #B0B0B0, 
-              -6px -6px 12px #FFFFFF;
+  box-shadow: var(--box-shadow-dark);
   transition: var(--default-transition);
 }
 
