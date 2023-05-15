@@ -4,6 +4,7 @@
     flex: 1;
     max-width: 72px;
     height: 36px;
+    align-self: center;
   }
   
   .switch-container input {
