@@ -33,12 +33,6 @@
   align-items: center;
 }
 
-
-
-.spacer {
-  flex: 1;
-}
-
 body, header, button, .container a {
   background-color: var(--default-background);
   transition: var(--default-transition);
