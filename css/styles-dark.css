@@ -38,6 +38,7 @@
 
 .switch:before {
   background-color: var(--color-dark);
+  box-shadow: var(--switch-before-shadow-dark);
 }
 
 body, header, button {
