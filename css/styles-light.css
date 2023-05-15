@@ -64,7 +64,7 @@ header {
   align-items: center;
 }
   
-h1, h2, p, button, .container a {
+h1, h2, p, button, #island {
   color: var(--color-light);
   text-shadow: var(--text-shadow-light);
 }

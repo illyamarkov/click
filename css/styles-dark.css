@@ -63,7 +63,7 @@ header {
   align-items: center;
 }
   
-h1, h2, p, button, a {
+h1, h2, p, button, #island {
   color: var(--color-dark);
   text-shadow: var(--text-shadow-dark);
 }
