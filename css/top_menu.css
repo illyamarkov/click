@@ -2,8 +2,6 @@
 
 /* top menu bar */
 .menu-bar {
-    background-color:var(--default-background);
-    box-shadow:var(--default-box-shadow);
     height:6vh;
     padding: 10px;
     position:fixed;

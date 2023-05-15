@@ -17,6 +17,12 @@
   }
 }
 
+/* top menu bar */
+.menu-bar {
+  background-color:var(--background-light);
+  box-shadow:var(--box-shadow-light);
+}
+
 body, header, button, .container a {
   background-color: var(--background-light);
   transition: var(--default-transition);
@@ -84,19 +90,15 @@ button:active {
 }
 
   /* CONTAINER */
-
   .container {
   width: 200px;
   height: 200px;
-  background-color: #E7E7E7;
+  background-color:var(--background-light);
   border-radius: 25px;
   overflow: auto;
   padding: 10px;
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  box-shadow: 10px 10px 20px #B0B0B0, -10px -10px 20px #FFFFFF;
+  margin: 40px;
+  box-shadow: var(--box-shadow-light);
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -112,11 +114,10 @@ button:active {
 .container a {
   display: block;
   text-decoration: none;
-  color: #303030;
+  color: var(--color-light);
   font-size: 1.2em;
   -webkit-tap-highlight-color: transparent;
-
-  background-color: #E7E7E7;
+  background-color: var(--background-light);
   border-radius: 15px;
   border: none;
   box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
