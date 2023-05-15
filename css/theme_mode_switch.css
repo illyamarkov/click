@@ -1,7 +1,7 @@
 @import "vars.css";
 
 .switch-container {
-  margin: 10px;
+    margin: 10px;
     flex: 1;
     max-width: 72px;
     height: 36px;
