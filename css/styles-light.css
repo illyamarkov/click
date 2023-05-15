@@ -69,6 +69,7 @@ header {
 h1, h2, p, button, #island {
   color: var(--color-light);
   text-shadow: var(--text-shadow-light);
+  user-select: none;
 }
 
 h1, h2 {
