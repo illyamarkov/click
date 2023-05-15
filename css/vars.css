@@ -19,7 +19,7 @@
   --switch-shadow-light:inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF, 6px 6px 12px #B0B0B0, -6px -6px 12px #FFFFFF;
   --switch-shadow-dark: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b, 6px 6px 12px #202022, -6px -6px 12px #38393b;
   --switch-before-shadow-light: inset -6px -6px 12px #131415, inset 6px 6px 12px #393b41, 2px 2px 5px #B0B0B0;
-  --switch-before-shadow-dark: inset -6px -6px 12px #B0B0B0, inset 6px 6px 12px #FFFFFF, 2px 2px 5px #B0B0B0;
+  --switch-before-shadow-dark: inset -6px -6px 12px #B0B0B0, inset 6px 6px 12px #FFFFFF;
 }
 
 
