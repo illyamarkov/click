@@ -1,5 +1,5 @@
-@import "theme_mode_switch.css";
 @import "vars.css";
+@import "top_menu.css";
 
 @font-face {
   font-family: legible-font;
@@ -17,16 +17,8 @@
 
 /* top menu bar */
 .menu-bar {
-  background-color: #313236;
-  box-shadow:var(--default-box-shadow);
-  display:flex;
-  height:50px;
-  padding:var(--default-padding);
-  position:fixed;
-  right:0;
-  top:0;
-  transition:var(--default-transition);
-  width:100%
+  background-color:var(--background-dark);
+  box-shadow:var(--box-shadow-dark);
 }
 
   body {
