@@ -3,6 +3,7 @@
 @import "popup.css";
 @import "chatbox.css";
 @import "upgrade_buttons.css";
+@import "main.css";
 
 @font-face {
   font-family: legible-font;
