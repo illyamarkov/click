@@ -12,6 +12,20 @@ transform: translateY(2px);
 }
 }
   
+
+.menu-bar {
+  background-color:var(--default-background);
+  box-shadow:var(--default-box-shadow);
+  display:flex;
+  height:60px;
+  padding:var(--default-padding);
+  position:fixed;
+  right:0;
+  top:0;
+  transition:var(--default-transition);
+  width:100%
+  }
+  
   body {
   font-family: legible-font;
   background-color: #313236;
