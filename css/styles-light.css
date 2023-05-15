@@ -26,23 +26,7 @@
   background-color: #E7E7E7;
   box-shadow: 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
   transition: all 0.4s ease-in-out;
-}
-
-/* Dark/Light Mode Switch Container */
-#menu-bar .switch-container {
-  display: flex;
-  align-items: left;
-}
-
-/* Login Button Container */
-#menu-bar .login-container {
-  /* Your styles here, for example: */
-  display: flex;
-  align-items: center;
-}
-
-
-
+} 
 
 
 body {
