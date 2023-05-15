@@ -42,3 +42,49 @@ button {
   margin: var(--default-margin);
   font-size: 1.5em;
 }
+button:hover {
+  transform: var(--hover-transform);
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
+}
+button:active {
+  transform: var(--active-transform);
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
+}
+
+
+h1, h2, p, button, #island {
+  user-select: none;
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: 2em;
+  transition: var(--default-transition);
+}
+
+h1 {
+  animation: slide-in 0.5s ease infinite alternate;
+}
+  
+h2 {
+  font-size: 3em;
+  z-index: 1;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  overflow: auto;
+  padding: 10px;
+  margin: 40px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  transition: var(--default-transition);
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}

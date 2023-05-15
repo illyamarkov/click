@@ -25,7 +25,6 @@
   box-shadow: var(--active-box-shadow-light);
 }
 
-/* top menu bar */
 .menu-bar {
   background-color:var(--background-light);
   box-shadow:var(--box-shadow-light);
@@ -53,56 +52,19 @@ header {
 h1, h2, p, button, #island {
   color: var(--color-light);
   text-shadow: var(--text-shadow-light);
-  user-select: none;
-}
-
-h1, h2 {
-  margin: 0;
-  font-size: 2em;
-  transition: var(--default-transition);
-}
-
-h1 {
-  animation: slide-in 0.5s ease infinite alternate;
-}
-
-h2 {
-  font-size: 3em;
-  z-index: 1;
 }
 
 button {
   box-shadow: var(--box-shadow-light);
 }
-  
 button:hover {
-  transform: var(--hover-transform);
   box-shadow: var(--hover-box-shadow-light);
-  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
 }
-
 button:active {
-  transform: var(--active-transform);
   box-shadow: var(--active-box-shadow-light);
-  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
 }
 
 .container {
-  width: 200px;
-  height: 200px;
   background-color:var(--background-light);
-  border-radius: 25px;
-  overflow: auto;
-  padding: 10px;
-  margin: 40px;
   box-shadow: var(--box-shadow-light);
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth;
-  transition: var(--default-transition);
-}
-
-.container::-webkit-scrollbar {
-  display: none;
 }
