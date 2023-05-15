@@ -28,6 +28,9 @@
   transition: var(--default-transition);
 }
 
+.switch:before {
+  background-color: var(--color-dark);
+}
 body, header, button, .container a {
   background-color: var(--background-dark);
   transition: var(--default-transition);

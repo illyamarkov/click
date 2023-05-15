@@ -30,6 +30,10 @@
   transition: var(--default-transition);
 }
 
+.switch:before {
+  background-color: var(--color-light);
+}
+
 body, header, button, .container a {
   background-color: var(--background-light);
   transition: var(--default-transition);
