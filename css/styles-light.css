@@ -37,6 +37,7 @@
 .login-button {
   padding: 10px;
   margin: 0;
+  font-size: 1em;
 }
 
 body, header, button, .container a {
