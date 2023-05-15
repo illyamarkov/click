@@ -45,12 +45,12 @@
 
 
 body, header, button, .container a {
-  font-family: var(--default-font);
   background-color: var(--default-background);
   transition: var(--default-transition);
 }
 
 body {
+  font-family: var(--default-font);
   display: flex;
   justify-content: center;
   align-items: center;
