@@ -26,4 +26,5 @@
     margin: 0;
     font-size: 2em;
     font-family: legible-font;
+    transition:var(--default-transition);
   }
