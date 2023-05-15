@@ -23,7 +23,6 @@
   width: 100%;
   height: 100%;
   border-radius: 50px;
-  background-color: blue;
   transition: var(--default-transition);
 }
   
