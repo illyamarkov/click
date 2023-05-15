@@ -19,7 +19,11 @@
   }
 }
 
-/* top menu bar */
+#chatbox {
+  background-color: var(--background-dark);
+  box-shadow: var(--active-box-shadow-dark);
+}
+
 .menu-bar {
   background-color:var(--background-dark);
   box-shadow:var(--box-shadow-dark);
@@ -29,11 +33,6 @@
   background-color: var(--background-dark);
   box-shadow: var(--box-shadow-dark);
   box-shadow: var(--switch-shadow-dark);
-}
-
-#chatbox {
-  background-color: var(--background-dark);
-  box-shadow: var(--active-box-shadow-dark);
 }
 
 .switch:before {
@@ -47,13 +46,7 @@ body, header, button {
 }
 
 header {
-  padding: 30px;
-  border-radius: 25px;
   box-shadow: var(--box-shadow-dark);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
   
 h1, h2, p, button, #island {
@@ -78,12 +71,7 @@ h2 {
 }
   
 button {
-  border-radius: 25px;
-  border: none;
   box-shadow: var(--box-shadow-dark);
-  padding: var(--default-padding);
-  margin: var(--default-margin);
-  font-size: 2em;
 }
 
 button:hover {
