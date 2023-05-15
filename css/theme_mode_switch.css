@@ -2,7 +2,6 @@
 
 .switch-container {
     flex: 1;
-    display: inline-block;
     max-width: 72px;
     height: 36px;
   }
