@@ -1,5 +1,5 @@
-@import "theme_mode_switch.css";
 @import "vars.css";
+@import "top_menu.css";
 
 /* font */
 @font-face {
@@ -17,34 +17,7 @@
   }
 }
 
-/* top menu bar */
-.menu-bar {
-  background-color:var(--default-background);
-  box-shadow:var(--default-box-shadow);
-  height:6vh;
-  padding: 10px;
-  position:fixed;
-  right:0;
-  top:0;
-  transition:var(--default-transition);
-  width:100%;
-  display: flex;
-  justify-content: right;
-  align-items: stretch;
-  gap: 20px;
-}
 
-.login-container {
-  display: flex;
-  align-items: center;
-}
-
-.login-button {
-  padding: 0px 25px;
-  margin: 0;
-  font-size: 2em;
-  font-family: legible-font;
-}
 
 body, header, button, .container a {
   background-color: var(--default-background);
