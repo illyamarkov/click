@@ -21,7 +21,7 @@
 .menu-bar {
   background-color:var(--default-background);
   box-shadow:var(--default-box-shadow);
-  height:50px;
+  height:8vh;
   padding:var(--default-padding);
   position:fixed;
   right:0;
@@ -29,9 +29,9 @@
   transition:var(--default-transition);
   width:100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
-  margin: 15px;
+  gap: 20px;
 }
 
 body, header, button, .container a {
