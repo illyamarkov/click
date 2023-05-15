@@ -45,5 +45,5 @@
   }
   
   .switch-container input:checked + .switch:before {
-    transform: translateX(32px);
+    transform: translateX(12px);
   }
