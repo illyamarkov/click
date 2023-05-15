@@ -19,6 +19,7 @@
   .login-container {
     display: flex;
     align-items: center;
+    transition:var(--default-transition);
   }
   
   .login-button {
