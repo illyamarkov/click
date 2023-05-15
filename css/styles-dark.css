@@ -250,13 +250,6 @@ button:active {
 
 /* SWITCH */
 
-.switch-container {
-  display: inline-block;
-  position: relative;
-  width: 48px;
-  height: 24px;
-}
-
 .switch {
   background-color: #ddd;
   box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.3),
