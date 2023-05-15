@@ -15,7 +15,7 @@
 
 /* font */
 @font-face {
-  font-family: var(--default-font);
+  font-family: legible-font;
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
 }
 
@@ -50,7 +50,7 @@ body, header, button, .container a {
 }
 
 body {
-  font-family: var(--default-font);
+  font-family: legible-font;
   display: flex;
   justify-content: center;
   align-items: center;
