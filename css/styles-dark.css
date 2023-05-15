@@ -99,7 +99,6 @@ button:active {
 }
 
 /* CONTAINER */
-  /* CONTAINER */
   .container {
     width: 200px;
     height: 200px;
@@ -128,7 +127,7 @@ button:active {
   background-color: var(--background-dark);
   border-radius: 15px;
   border: none;
-  box-shadow: var(--hover-box-shadow-dark), 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
+  box-shadow: var(--box-shadow-dark);
   padding: var(--default-padding);
   margin: 10px;
   margin-top: 30px;
@@ -151,7 +150,6 @@ button:active {
 }
 
 /* CHATBOX */
-
 #chatbox {
   width: 200px;
   height: 480px;
