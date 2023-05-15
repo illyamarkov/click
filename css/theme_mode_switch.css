@@ -40,11 +40,10 @@
     height: 30px;
     border-radius: 50%;
     background-color: #303030;
-    box-shadow: var(--active-box-shadow-dark),
-                2px 2px 5px #B0B0B0;
+    box-shadow: var(--active-box-shadow-dark), 2px 2px 5px #B0B0B0;
     transition: var(--default-transition);
   }
   
   .switch-container input:checked + .switch:before {
-    transform: translateX(36px);
+    transform: translateX(32px);
   }
