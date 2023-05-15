@@ -3,7 +3,7 @@
 .switch-container {
     flex: 1;
     display: inline-block;
-    width: 72px;
+    max-width: 72px;
     height: 36px;
   }
   
