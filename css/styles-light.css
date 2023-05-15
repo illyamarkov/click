@@ -27,17 +27,11 @@
   right:0;
   top:0;
   transition:var(--default-transition);
-  width:100%
-}
-
-/* Container for menu items */
-.menu-items {
+  width:100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
-
 
 body, header, button, .container a {
   background-color: var(--default-background);

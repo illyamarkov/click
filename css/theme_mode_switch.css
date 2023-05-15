@@ -2,11 +2,8 @@
 
 .switch-container {
     display: inline-block;
-    position: absolute;
     width: 72px;
     height: 36px;
-    top: 20px;
-    right: 20px;
   }
   
   .switch-container input {
