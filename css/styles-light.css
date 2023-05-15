@@ -22,7 +22,7 @@
   background-color:var(--default-background);
   box-shadow:var(--default-box-shadow);
   height:6vh;
-  padding:var(--default-padding);
+  padding: 10px;
   position:fixed;
   right:0;
   top:0;
