@@ -2,6 +2,7 @@
 @import "top_menu.css";
 @import "popup.css";
 @import "chatbox.css";
+@import "global_upgrades.css";
 
 /* font */
 @font-face {
