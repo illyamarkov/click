@@ -12,16 +12,13 @@
   }
 }
 
-
-
-
 /* Menu Bar */
 #menu-bar {
   position: fixed;
   top: 0;
   right: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* distribute items evenly */
   align-items: center;
   width: 100%;
   height: 60px; /* adjust as needed */
@@ -31,17 +28,10 @@
   transition: all 0.4s ease-in-out;
 }
 
-/* Container for menu items */
-#menu-bar .menu-items {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-}
-
 /* Dark/Light Mode Switch Container */
 #menu-bar .switch-container {
-  margin-right: 20px; /* adjust as needed */
+  display: flex;
+  align-items: center;
 }
 
 /* Login Button Container */
@@ -49,36 +39,6 @@
   /* Your styles here, for example: */
   display: flex;
   align-items: center;
-}
-
-/* Login Button */
-#menu-bar .login-button {
-  font-family: legible-font;
-  background-color: #E7E7E7;
-  border-radius: 25px;
-  border: none;
-  box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 5px 5px 15px #B0B0B0, -5px -5px 15px #FFFFFF;
-  padding: 15px 25px;
-  font-size: 1em;
-  color: #303030;
-  text-shadow: 2px 2px 5px #B0B0B0;
-  transition: all 0.4s ease-in-out;
-}
-
-#menu-bar .login-button:hover {
-  transform: translateY(-3px);
-  box-shadow: inset 0px 0px 0px #B0B0B0, inset 0px 0px 0px #FFFFFF, 12px 12px 25px #B0B0B0, -12px -12px 25px #FFFFFF;
-  transition: all 0.4s ease-in-out;
-
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-#menu-bar .login-button:active {
-  transform: translateY(0px);
-  box-shadow: inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF;
-  transition: all 0.4s ease-in-out;
-
-  transition: transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out;
 }
 
 
