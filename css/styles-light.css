@@ -21,7 +21,7 @@
 .menu-bar {
   background-color:var(--default-background);
   box-shadow:var(--default-box-shadow);
-  height:8vh;
+  height:6vh;
   padding:var(--default-padding);
   position:fixed;
   right:0;
@@ -32,6 +32,10 @@
   justify-content: right;
   align-items: stretch;
   gap: 20px;
+}
+
+.login-container {
+  height: 35px;
 }
 
 body, header, button, .container a {
