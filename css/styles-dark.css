@@ -30,18 +30,19 @@
 
 
 
+/* top menu bar */
 #menu-bar {
-  background-color: #313236;
+  background-color:var(--default-background);
   box-shadow:var(--default-box-shadow);
   display:flex;
-  height:60px;
+  height:50px;
   padding:var(--default-padding);
   position:fixed;
   right:0;
   top:0;
   transition:var(--default-transition);
   width:100%
-  }
+}
 
   body {
   font-family: legible-font;
@@ -248,6 +249,13 @@ button:active {
 }
 
 /* SWITCH */
+
+.switch-container {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 24px;
+}
 
 .switch {
   background-color: #ddd;
