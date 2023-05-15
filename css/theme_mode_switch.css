@@ -1,7 +1,7 @@
 @import "vars.css";
 
 .switch-container {
-    flex: auto;
+    flex: 1;
     position: relative;
     display: inline-block;
     max-width: 72px;
