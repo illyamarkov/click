@@ -3,18 +3,18 @@
     width: 200px;
     height: 480px;
     transition: var(--default-transition);
-  }
+}
   
-  #island {
+#island {
     width: auto;
     height: auto;
     border-radius: 15px;
     margin: 10px;
-  }
+}
   
-  .island {
+.island {
     height: calc(100% - 40px); /* adjust this value as needed */
     overflow-y: auto; /* enable vertical scrolling if needed */
     animation: none;
     text-align: center;
-  }
+}

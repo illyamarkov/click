@@ -2,7 +2,7 @@
 @import "top_menu.css";
 @import "popup.css";
 @import "chatbox.css";
-@import "global_upgrades.css";
+@import "upgrade_buttons.css";
 
 /* font */
 @font-face {
@@ -38,6 +38,7 @@
 }
 .switch:before {
   background-color: var(--color-light);
+  box-shadow: var(--switch-before-shadow-light);
 }
 
 body, header, button, .container a {

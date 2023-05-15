@@ -2,7 +2,7 @@
 @import "top_menu.css";
 @import "popup.css";
 @import "chatbox.css";
-@import "global_upgrades.css";
+@import "upgrade_buttons.css";
 
 @font-face {
   font-family: legible-font;
@@ -37,21 +37,12 @@
 
 .switch:before {
   background-color: var(--color-dark);
+  box-shadow: var(--switch-before-shadow-dark);
 }
 
-body, header, button, .container a {
+body, header, button {
   background-color: var(--background-dark);
   transition: var(--default-transition);
-}
-
-body {
-  font-family: legible-font;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  scroll-behavior: smooth;
 }
 
 header {
