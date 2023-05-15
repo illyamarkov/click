@@ -15,5 +15,7 @@
   --default-transition:all .4s ease-in-out;
   --hover-box-shadow-light:inset 0 0 0 #B0B0B0,inset 0 0 0 #FFFFFF,12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
   --hover-box-shadow-dark:inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
-  --hover-transform:translateY(-5px)
+  --hover-transform:translateY(-5px);
+  --switch-shadow-light:inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF, 6px 6px 12px #B0B0B0, -6px -6px 12px #FFFFFF;
+  --switch-shadow-dark: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b, 6px 6px 12px #202022, -6px -6px 12px #38393b;
 }

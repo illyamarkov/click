@@ -34,9 +34,7 @@
 .switch {
   background-color: var(--background-light);
   box-shadow: var(--box-shadow-light);
-  box-shadow: var(--active-box-shadow-light),
-              6px 6px 12px #B0B0B0, 
-              -6px -6px 12px #FFFFFF;
+  box-shadow: var(--switch-shadow-light);
 }
 .switch:before {
   background-color: var(--color-light);

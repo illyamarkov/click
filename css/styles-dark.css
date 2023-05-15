@@ -27,6 +27,7 @@
 .switch {
   background-color: var(--background-dark);
   box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--switch-shadow-dark);
 }
 
 #chatbox {
