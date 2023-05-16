@@ -1,0 +1,133 @@
+@import "elements/vars.css";
+@import "elements/top_menu.css";
+@import "elements/login_popup.css";
+@import "elements/error_popup.css";
+@import "elements/chatbox.css";
+
+header {
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+    font-family: legible-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.globalButton {
+    width: 180px;
+    border-radius: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-family: legible-font;
+}
+
+.localButton {
+    width: 180px;
+    border-radius: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-family: legible-font;
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  font-size: 1.5em;
+}
+button:hover {
+  transform: translateY(-5px);
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
+}
+button:active {
+  transform: translateY(0px);
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
+}
+
+.score-button {
+  font-size: 2em;
+  height: 100%;
+}
+
+h1, h2, p, button, #island {
+  user-select: none;
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: 2em;
+  transition: var(--default-transition);
+}
+
+h1 {
+  animation: slide-in 0.5s ease infinite alternate;
+}
+  
+h2 {
+  font-size: 3em;
+  z-index: 1;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  overflow: auto;
+  padding: 10px;
+  margin: 40px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  transition: var(--default-transition);
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.popup {
+  background-color: #E7E7E7;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: var(--default-transition);
+}
+.popup-header {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: var(--default-transition);
+}

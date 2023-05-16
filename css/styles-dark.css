@@ -1,349 +1,65 @@
+
+@import "main.css";
+
 @font-face {
   font-family: legible-font;
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
 }
-  
+
 @keyframes slide-in {
-from {
-transform: translateY(-2px);
-}
-to {
-transform: translateY(2px);
-}
-}
-  
-  body {
-  font-family: legible-font;
-  background-color: #313236;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  transition: all 0.4s ease-in-out;
+  from {
+    transform: translateY(-2px);
   }
-  
-header {
-  background-color: #313236;
-  padding: 30px;
-  border-radius: 25px;
-  box-shadow: 12px 12px 25px #202022, -12px -12px 25px #38393b;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.4s ease-in-out;
+  to {
+    transform: translateY(2px);
+  }
 }
-  
-h1,
-h2 {
-  margin: 0;
-  font-size: 2em;
-  color: #e0e0e0;
-  text-shadow: 2px 2px 5px #202022;
-  transition: all 0.4s ease-in-out;
-}
-  
-p {
-  color: #e0e0e0;
-  transition: all 0.4s ease-in-out;
-}
-  
-h1 {
-  animation: slide-in 0.5s ease infinite alternate;
-}
-  
-h2 {
-  font-size: 3em;
-  z-index: 1;
-}
-  
-button {
-  background-color: #313236;
-  border-radius: 25px;
-  border: none;
-  box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 5px 5px 15px #202022, -5px -5px 15px #38393b;
-  padding: 15px 25px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 2em;
-  color: #e0e0e0;
-  text-shadow: 2px 2px 5px #202022;
-  transition: all 0.4s ease-in-out;
-}
-  
-button:hover {
-  transform: translateY(-5px);
-  box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
-  transition: all 0.4s ease-in-out;
-  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-  
-button:active {
-  transform: translateY(0px);
-  box-shadow: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b;
-  transition: all 0.4s ease-in-out;
-  transition: transform 0.3s ease-in-out, box-shadow 0.05s ease-in-out;
-}
-  
-/* CONTAINER */
-
-.container {
-  width: 200px;
-  height: 200px;
-  background-color: #313236;
-  border-radius: 25px;
-  overflow: auto;
-  padding: 10px;
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  box-shadow: 10px 10px 20px #202022, -10px -10px 20px #38393b;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth;
-  transition: all 0.4s ease-in-out;
-}
-
-.container::-webkit-scrollbar {
-  display: none;
-}
-
-.container a {
-  display: block;
-  text-decoration: none;
-  color: #303030;
-  font-size: 1.2em;
-  -webkit-tap-highlight-color: transparent;
-
-  background-color: #313236;
-  border-radius: 15px;
-  border: none;
-  box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 5px 5px 15px #202022, -5px -5px 15px #38393b;
-  padding: 15px 25px;
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-size: 1.2em;
-  color: #e0e0e0;
-  text-shadow: 2px 2px 5px #202022;
-  transition: all 0.4s ease-in-out;
-}
-
-.container a:hover {
-  transform: translateY(-3px); /* add a hover animation */
-  box-shadow: inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
-  transition: all 0.4s ease-in-out;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* add another transition */
-}
-
-.container a:active {
-  transform: translateY(0px); /* add an active animation */
-  box-shadow: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b;
-  transition: all 0.4s ease-in-out;
-  transition: transform 0.2s ease-in-out, box-shadow 0.05s ease-in-out; /* add another transition */
-}
-
-/* -=-=-=-=- OVERLAY CSS -=-=-=-=- */
-
-.popup-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.popup {
-  width: 400px;
-  height: 400px;
-  background-color: #313236;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.4s ease-in-out;
-}
-
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d9d9d9;
-  transition: all 0.4s ease-in-out;
-}
-
-.popup-header h2 {
-  margin: 0;
-}
-
-.close-btn {
-  border: none;
-  background-color: transparent;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.popup-content {
-  padding: 20px;
-  flex-grow: 1;
-}
-
-.popup-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -5px;
-}
-
-.popup-image {
-  max-width: 100%;
-  max-height: 50px;
-  object-fit: contain;
-}
-
-/* SWITCH */
-
-.switch-container {
-  display: inline-block;
-  position: relative;
-  width: 48px;
-  height: 24px;
-}
-
-.switch-container input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.switch {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  background-color: #ddd;
-  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.3),
-              inset -2px -2px 5px rgba(0, 0, 0, 0.3),
-              2px 2px 5px rgba(255, 255, 255, 0.3),
-              -2px -2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease-in-out;
-}
-
-.switch:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3),
-              -2px -2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease-in-out;
-}
-
-.switch-container input:checked + .switch:before {
-  transform: translateX(24px);
-}
-
-/* SWITCH */
-
-.switch-container {
-  display: inline-block;
-  position: absolute;
-  width: 72px;
-  height: 36px;
-  top: 20px;
-  right: 20px;
-}
-
-.switch-container input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.switch {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  background-color: #313236;
-  box-shadow: inset 6px 6px 12px #202022, 
-              inset -6px -6px 12px #38393b,
-              6px 6px 12px #202022, 
-              -6px -6px 12px #38393b;
-  transition: all 0.4s ease-in-out;
-}
-
-.switch:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #e0e0e0;
-  box-shadow: inset -6px -6px 12px #B0B0B0, 
-              inset 6px 6px 12px #FFFFFF,
-              -2px -2px 5px #202022;
-  transition: all 0.4s ease-in-out;
-}
-
-.switch-container input:checked + .switch:before {
-  transform: translateX(36px);
-}
-
-/* CHATBOX */
 
 #chatbox {
-  width: 200px;
-  height: 480px;
-  box-shadow: inset 6px 6px 12px #202022, 
-              inset -6px -6px 12px #38393b;
+  background-color: var(--background-dark);
+  box-shadow: var(--active-box-shadow-dark);
 }
 
-#island {
-  width: auto;
-  height: auto;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  box-shadow: 
-              6px 6px 12px #202022, 
-              -6px -6px 12px #38393b;
+.menu-bar {
+  background-color:var(--background-dark);
+  box-shadow:var(--shadow-dark);
 }
 
-.island {
-  height: calc(100% - 40px); /* adjust this value as needed */
-  overflow-y: auto; /* enable vertical scrolling if needed */
-  animation: none;
-  text-align: center;
+.switch {
+  background-color: var(--background-dark);
+  box-shadow: var(--shadow-dark);
+  box-shadow: var(--switch-shadow-dark);
+}
+
+.switch:before {
+  background-color: var(--color-dark);
+  box-shadow: var(--switch-before-shadow-dark);
+}
+
+body, header, button {
+  background-color: var(--background-dark);
+  transition: var(--default-transition);
+}
+
+header {
+  box-shadow: var(--shadow-dark);
+}
+  
+h1, h2, p, button, #island {
+  color: var(--color-dark);
+  text-shadow: var(--text-shadow-dark);
+}
+button {
+  box-shadow: var(--button-shadow-dark);
+}
+button:hover {
+  box-shadow: var(--hover-shadow-dark);
+}
+button:active {
+  box-shadow: var(--active-box-shadow-dark);
+}
+
+.container {
+  background-color:var(--background-dark);
+  box-shadow: var(--shadow-dark);
 }

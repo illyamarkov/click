@@ -1,0 +1,22 @@
+.login-popup-content input[type="email"],
+.login-popup-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-popup-content button[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-close-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}

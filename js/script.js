@@ -1,21 +1,28 @@
-//dark-light mode switch
-const switchInput = document.querySelector('#switch');
-const linkTag = document.querySelector('link');
-
-switchInput.addEventListener('change', () => {
-  if (switchInput.checked) {
-    linkTag.setAttribute('href', 'css/styles-dark.css');
-  } else {
-    linkTag.setAttribute('href', 'css/styles-light.css');
-  }
-});
-
-
-// -=-=-=-=- CODE -=-=-=-=- 
+import { darklightmode } from './darklightmode.js';
 import { app } from './firebase_init.js';
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 import { getDatabase, ref, get, onValue, runTransaction, set } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+
+//dark and light mode switch listener
+darklightmode();
+
+// Select the login button, popup container, and close button
+const loginButton = document.querySelector('.login-button');
+const loginPopupContainer = document.querySelector('.popup-container #login-menu');
+
+// Open the popup when the login button is clicked
+loginButton.addEventListener('click', () => {
+  loginPopupContainer.style.display = 'flex';
+});
+
+// Close the popup when the close button is clicked
+loginPopupContainer.addEventListener('click', () => {
+  loginPopupContainer.style.display = 'none';
+});
+
+const analytics = getAnalytics(app);
+const db = getDatabase();
 
 // const auth = getAuth();
 // createUserWithEmailAndPassword(auth, email, password)
@@ -30,23 +37,7 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 //     // ..
 //   });
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-
-
-const analytics = getAnalytics(app);
-
-// const auth = getAuth(app);
-
-const db = getDatabase();
-
 // -=-=-=-=- AUTH -=-=-=-=-
-
-
 
 // function createUserOnDB(uid, name, email) {
 //   const db = getDatabase();
@@ -86,10 +77,6 @@ const db = getDatabase();
 // }).catch(function(error) {
 //   console.error('Read access denied: ' + error.message);
 // });
-
-// -=-=-
-
-
 
 function setScore(score, val) {
   const db = getDatabase();

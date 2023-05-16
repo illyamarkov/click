@@ -1,0 +1,31 @@
+
+.popup {
+  height: 400px;
+}
+  
+.close-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.popup-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.popup-image {
+  max-width: 100%;
+  max-height: 50px;
+  object-fit: contain;
+}
+  
+  

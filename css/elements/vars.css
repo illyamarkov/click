@@ -1,0 +1,34 @@
+:root {
+  /* default settings */
+  --default-margin:10px;
+  --default-padding:15px 25px;
+  --default-transition:all .4s ease-in-out;
+  /* text color */
+  --color-light:#303030;
+  --color-dark:#e0e0e0;
+  /* background color */
+  --background-light:#E7E7E7;
+  --background-dark:#313236;
+  /* inset shadow color */
+  --active-box-shadow-light:inset 6px 6px 12px #B0B0B0,inset -6px -6px 12px #FFF;
+  --active-box-shadow-dark:inset 6px 6px 12px #202022,inset -6px -6px 12px #38393b;
+  /* default shadow color */
+  --shadow-light:10px 10px 20px #B0B0B0,-10px -10px 20px #FFF;
+  --shadow-dark:10px 10px 20px #202022,-10px -10px 20px #38393b;
+  /* text shadow color */
+  --text-shadow-light:2px 2px 5px #B0B0B0;
+  --text-shadow-dark:2px 2px 5px #202022;
+  /* button shadow color */
+  --button-shadow-light:inset 0px 0px 0px #B0B0B0,inset 0px 0px 0px #FFFFFF,5px 5px 15px #B0B0B0,-5px -5px 15px #FFF;
+  --button-shadow-dark:inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 5px 5px 15px #202022, -5px -5px 15px #38393b;
+  /* hover shadow color */
+  --hover-shadow-light:inset 0px 0px 0px #B0B0B0,inset 0px 0px 0px #FFFFFF,12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
+  --hover-shadow-dark:inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
+  /* weird shadow magic for the switch */
+  --switch-shadow-light:inset 6px 6px 12px #B0B0B0, inset -6px -6px 12px #FFFFFF, 6px 6px 12px #B0B0B0, -6px -6px 12px #FFFFFF;
+  --switch-shadow-dark: inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b, 6px 6px 12px #202022, -6px -6px 12px #38393b;
+  --switch-before-shadow-light: inset -6px -6px 12px #131415, inset 6px 6px 12px #393b41, 2px 2px 5px #B0B0B0;
+  --switch-before-shadow-dark: inset -6px -6px 12px #B0B0B0, inset 6px 6px 12px #FFFFFF;
+}
+
+

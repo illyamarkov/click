@@ -1,0 +1,45 @@
+@import "vars.css";
+
+.switch-container {
+  margin: 10px;
+  margin-top: 8px;
+  flex: 1;
+  max-width: 72px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: var(--default-transition);
+}
+  
+.switch:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: var(--default-transition);
+}
+  
+.switch-container input:checked + .switch:before {
+  transform: translateX(28px);
+}
