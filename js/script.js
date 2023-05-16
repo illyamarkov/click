@@ -9,8 +9,7 @@ darklightmode();
 
 // Select the login button, popup container, and close button
 const loginButton = document.querySelector('.login-button');
-const loginPopupContainer = document.querySelector('#loginSignupPopup');
-const loginCloseButton = document.querySelector('.close-btn');
+const loginPopupContainer = document.querySelector('.popup-container');
 
 // Open the popup when the login button is clicked
 loginButton.addEventListener('click', () => {
@@ -18,10 +17,9 @@ loginButton.addEventListener('click', () => {
 });
 
 // Close the popup when the close button is clicked
-loginCloseButton.addEventListener('click', () => {
+loginExit.addEventListener('click', () => {
   loginPopupContainer.style.display = 'none';
 });
-
 
 const analytics = getAnalytics(app);
 const db = getDatabase();

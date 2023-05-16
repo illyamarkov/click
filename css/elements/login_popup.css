@@ -1,7 +1,3 @@
-.login-popup-content {
-    padding: 20px;
-}
-
 .login-popup-content input[type="email"],
 .login-popup-content input[type="password"] {
     width: 100%;
