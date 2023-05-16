@@ -1,6 +1,7 @@
 @import "vars.css";
 
 .switch-container {
+  position: inherit;
   margin: 10px;
   flex: 1;
   max-width: 72px;
