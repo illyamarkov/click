@@ -1,4 +1,4 @@
-export function darkLightMode() {
+export function darklightmode() {
   const switchInput = document.querySelector('#switch');
   const linkTag = document.querySelector('link');
 

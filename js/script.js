@@ -6,6 +6,8 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 
 darklightmode();
 
+const analytics = getAnalytics(app);
+const db = getDatabase();
 
 // const auth = getAuth();
 // createUserWithEmailAndPassword(auth, email, password)
@@ -20,23 +22,7 @@ darklightmode();
 //     // ..
 //   });
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-
-
-const analytics = getAnalytics(app);
-
-// const auth = getAuth(app);
-
-const db = getDatabase();
-
 // -=-=-=-=- AUTH -=-=-=-=-
-
-
 
 // function createUserOnDB(uid, name, email) {
 //   const db = getDatabase();
