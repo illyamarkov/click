@@ -1,21 +1,11 @@
-//dark-light mode switch
-const switchInput = document.querySelector('#switch');
-const linkTag = document.querySelector('link');
-
-switchInput.addEventListener('change', () => {
-  if (switchInput.checked) {
-    linkTag.setAttribute('href', 'css/styles-dark.css');
-  } else {
-    linkTag.setAttribute('href', 'css/styles-light.css');
-  }
-});
-
-
-// -=-=-=-=- CODE -=-=-=-=- 
+import { darklightmode } from './darklightmode.js';
 import { app } from './firebase_init.js';
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
 import { getDatabase, ref, get, onValue, runTransaction, set } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+
+darklightmode();
+
 
 // const auth = getAuth();
 // createUserWithEmailAndPassword(auth, email, password)
