@@ -13,7 +13,7 @@
   --active-box-shadow-light:inset 6px 6px 12px #B0B0B0,inset -6px -6px 12px #FFF;
   --active-box-shadow-dark:inset 6px 6px 12px #202022,inset -6px -6px 12px #38393b;
   /* default shadow color */
-  --shadow-light:12px 12px 25px #B0B0B0,-12px -12px 25px #FFF;
+  --shadow-light:6px 6px 12px #B0B0B0,-6px -6px 12px #FFF;
   --shadow-dark:12px 12px 25px #202022,-12px -12px 25px #38393b;
   /* text shadow color */
   --text-shadow-light:2px 2px 5px #B0B0B0;
