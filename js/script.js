@@ -15,6 +15,7 @@ const loginCloseButton = document.querySelector('.close-btn');
 // Open the popup when the login button is clicked
 loginButton.addEventListener('click', () => {
   loginPopupContainer.style.display = 'flex';
+  popupContainer.style.opacity = '1';
 });
 
 // Close the popup when the close button is clicked
