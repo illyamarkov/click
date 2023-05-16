@@ -9,7 +9,7 @@ darklightmode();
 
 // Select the login button, popup container, and close button
 const loginButton = document.querySelector('.login-button');
-const loginPopupContainer = document.querySelector('.popup-container');
+const loginPopupContainer = document.querySelector('.popup-container #login-menu');
 
 // Open the popup when the login button is clicked
 loginButton.addEventListener('click', () => {
