@@ -4,6 +4,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase
 import { getDatabase, ref, get, onValue, runTransaction, set } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 
+//dark and light mode switch listener
 darklightmode();
 
 const analytics = getAnalytics(app);
@@ -62,10 +63,6 @@ const db = getDatabase();
 // }).catch(function(error) {
 //   console.error('Read access denied: ' + error.message);
 // });
-
-// -=-=-
-
-
 
 function setScore(score, val) {
   const db = getDatabase();
