@@ -1,3 +1,8 @@
+@import "elements/vars.css";
+@import "elements/top_menu.css";
+@import "elements/popup.css";
+@import "elements/chatbox.css";
+
 header {
   padding: 30px;
   border-radius: 25px;
@@ -43,11 +48,11 @@ button {
   font-size: 1.5em;
 }
 button:hover {
-  transform: var(--hover-transform);
+  transform: translateY(-5px);
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
 }
 button:active {
-  transform: var(--active-transform);
+  transform: translateY(0px);
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
 }
 

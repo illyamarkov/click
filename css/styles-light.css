@@ -1,7 +1,3 @@
-@import "vars.css";
-@import "top_menu.css";
-@import "popup.css";
-@import "chatbox.css";
 @import "main.css";
 
 /* font */
@@ -27,12 +23,12 @@
 
 .menu-bar {
   background-color:var(--background-light);
-  box-shadow:var(--box-shadow-light);
+  box-shadow:var(--shadow-light);
 }
 
 .switch {
   background-color: var(--background-light);
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--shadow-light);
   box-shadow: var(--switch-shadow-light);
 }
 .switch:before {
@@ -46,7 +42,7 @@ body, header, button, .container a {
 }
 
 header {
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--shadow-light);
 }
   
 h1, h2, p, button, #island {
@@ -55,7 +51,7 @@ h1, h2, p, button, #island {
 }
 
 button {
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--shadow-light);
 }
 button:hover {
   box-shadow: var(--hover-box-shadow-light);
@@ -66,5 +62,5 @@ button:active {
 
 .container {
   background-color:var(--background-light);
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--shadow-light);
 }
