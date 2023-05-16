@@ -53,9 +53,6 @@ h1, h2, p, button, #island {
 button {
   box-shadow: var(--shadow-light);
 }
-button:hover {
-  box-shadow: var(--hover-box-shadow-light);
-}
 button:active {
   box-shadow: var(--active-box-shadow-light);
 }
