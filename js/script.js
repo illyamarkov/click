@@ -7,6 +7,22 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 //dark and light mode switch listener
 darklightmode();
 
+// Select the login button, popup container, and close button
+const loginButton = document.querySelector('.login-button');
+const popupContainer = document.querySelector('#loginSignupPopup');
+const closeButton = document.querySelector('.close-btn');
+
+// Open the popup when the login button is clicked
+loginButton.addEventListener('click', () => {
+  popupContainer.style.display = 'flex';
+});
+
+// Close the popup when the close button is clicked
+closeButton.addEventListener('click', () => {
+  popupContainer.style.display = 'none';
+});
+
+
 const analytics = getAnalytics(app);
 const db = getDatabase();
 

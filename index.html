@@ -10,6 +10,26 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   </head>
   <body>
+    <!-- login popup -->
+    <div class="popup-container" id="loginSignupPopup">
+      <div class="popup">
+        <div class="popup-header">
+          <h2>Login / Signup</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="popup-content">
+          <form id="loginSignupForm">
+            <!-- Input fields for login/signup form -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Menu Bar -->
     <nav class="menu-bar">
       <!-- Dark/Light Mode Switch Container -->
