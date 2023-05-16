@@ -49,7 +49,7 @@ button {
 }
 button:hover {
   transform: translateY(-5px);
-  transition: transform .3s ease-in-out, box-shadow .2s ease-in-out;
+  transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
 }
 button:active {
   transform: translateY(0px);
