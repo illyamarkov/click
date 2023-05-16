@@ -1,22 +1,33 @@
-.login-popup-content input[type="email"],
-.login-popup-content input[type="password"] {
-    width: 100%;
+@import "elements/vars.css";
+
+#loginSignupForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    background-color: #E7E7E7;
     padding: 10px;
+    border-radius: 20px;
+    border: 0px solid #ccc;
     margin-bottom: 10px;
-}
+    transition: all 0.2s ease-in-out;
+    box-shadow: var(--active-box-shadow-light);
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #E7E7E7;
+    box-shadow: var(--button-shadow-light);
+  }
 
-.login-popup-content button[type="submit"] {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-.login-close-btn {
-    border: none;
-    background-color: transparent;
-    font-size: 24px;
-    cursor: pointer;
-}
+  button[type="submit"] {
+    margin-top: 25px;
+  }
+  
