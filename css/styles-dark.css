@@ -49,11 +49,9 @@ h1, h2, p, button, #island {
   color: var(--color-dark);
   text-shadow: var(--text-shadow-dark);
 }
-  
 button {
   box-shadow: var(--shadow-dark);
 }
-
 button:active {
   box-shadow: var(--active-box-shadow-dark);
 }
