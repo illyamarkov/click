@@ -17,7 +17,7 @@ loginButton.addEventListener('click', () => {
 });
 
 // Close the popup when the close button is clicked
-loginExit.addEventListener('click', () => {
+loginPopupContainer.addEventListener('click', () => {
   loginPopupContainer.style.display = 'none';
 });
 
