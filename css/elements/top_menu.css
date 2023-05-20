@@ -1,7 +1,7 @@
 @import "theme_mode_switch.css";
 
 .menu-bar {
-    height:6vh;
+    height: 50px;
     padding: 10px;
     position:fixed;
     right:0;
@@ -12,6 +12,7 @@
     justify-content: right;
     align-items: stretch;
     gap: 15px;
+    z-index: 9998;
   }
   
   .login-container {

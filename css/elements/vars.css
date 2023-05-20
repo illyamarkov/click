@@ -1,3 +1,7 @@
+@font-face {
+  font-family: legible-font;
+  src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
 :root {
   /* default settings */
   --default-margin:10px;
@@ -31,4 +35,21 @@
   --switch-before-shadow-dark: inset -6px -6px 12px #B0B0B0, inset 6px 6px 12px #FFFFFF;
 }
 
-
+[data-theme="dark"] {
+  --color-light:#e0e0e0;
+  /* background color */
+  --background-light:#313236;
+  /* inset shadow color */
+  --active-box-shadow-light:inset 6px 6px 12px #202022,inset -6px -6px 12px #38393b;
+  /* default shadow color */
+  --shadow-light:10px 10px 20px #202022,-10px -10px 20px #38393b;
+  /* text shadow color */
+  --text-shadow-light:2px 2px 5px #202022;
+  /* button shadow color */
+  --button-shadow-light:inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 5px 5px 15px #202022, -5px -5px 15px #38393b;
+  /* hover shadow color */
+  --hover-shadow-light:inset 0px 0px 0px #202022, inset 0px 0px 0px #38393b, 12px 12px 25px #202022, -12px -12px 25px #38393b;
+  /* weird shadow magic for the switch */
+  --switch-shadow-light:inset 6px 6px 12px #202022, inset -6px -6px 12px #38393b, 6px 6px 12px #202022, -6px -6px 12px #38393b;
+  --switch-before-shadow-light: inset -6px -6px 12px #B0B0B0, inset 6px 6px 12px #FFFFFF;
+}

@@ -14,12 +14,20 @@ const closeLogin = document.querySelector('#login-close');
 
 // Open the popup when the login button is clicked
 loginButton.addEventListener('click', () => {
+  loginPopupContainer.style.opacity = '0';
   loginPopupContainer.style.display = 'flex';
+  setTimeout(() => {
+    loginPopupContainer.style.opacity = '1';
+  }, 100);
 });
 
 // Close the popup when the close button is clicked
 closeLogin.addEventListener('click', () => {
-  loginPopupContainer.style.display = 'none';
+  loginPopupContainer.style.opacity = '0';
+  setTimeout(() => {
+    loginPopupContainer.style.display = 'none';
+    loginPopupContainer.style.opacity = '1';
+  }, 300);
 });
 
 const analytics = getAnalytics(app);
@@ -157,7 +165,7 @@ const closeBtn = document.querySelector('.close-btn');
 const popupImage = document.querySelector('.popup-image');
 
 function showPopup(type, message, imageSrc) {
-
+  popupContainer.style.opacity = '0';
   popupImage.src = imageSrc;
   popupContainer.style.display = 'flex';
   errorMSG.innerText = message;

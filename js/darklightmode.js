@@ -3,10 +3,8 @@ export function darklightmode() {
   const linkTag = document.querySelector('link');
 
   switchInput.addEventListener('change', () => {
-    if (switchInput.checked) {
-      linkTag.setAttribute('href', 'css/styles-dark.css');
-    } else {
-      linkTag.setAttribute('href', 'css/styles-light.css');
-    }
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
   });
 }

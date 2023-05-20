@@ -8,6 +8,7 @@ header {
   padding: 30px;
   border-radius: 25px;
   text-align: center;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +115,7 @@ h2 {
 }
 
 .popup {
-  background-color: #E7E7E7;
+  background-color: var(--background-light);
   width: 400px;
   height: auto;
   border-radius: 20px;
