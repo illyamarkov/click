@@ -1,0 +1,66 @@
+@import "main.css";
+
+/* font */
+@font-face {
+  font-family: legible-font;
+  src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
+
+/* bobbing animation */
+@keyframes slide-in {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
+#chatbox {
+  background-color: var(--background-light);
+  box-shadow: var(--active-box-shadow-light);
+}
+
+.menu-bar {
+  background-color:var(--background-light);
+  box-shadow:var(--shadow-light);
+}
+
+.switch {
+  background-color: var(--background-light);
+  box-shadow: var(--shadow-light);
+  box-shadow: var(--switch-shadow-light);
+}
+.switch:before {
+  background-color: var(--color-light);
+  box-shadow: var(--switch-before-shadow-light);
+}
+
+body, header, button, .container a {
+  background-color: var(--background-light);
+  transition: var(--default-transition);
+}
+
+header {
+  box-shadow: var(--shadow-light);
+}
+  
+h1, h2, p, button, #island {
+  color: var(--color-light);
+  text-shadow: var(--text-shadow-light);
+}
+
+button {
+  box-shadow: var(--button-shadow-light);
+}
+button:hover {
+  box-shadow: var(--hover-shadow-light);
+}
+button:active {
+  box-shadow: var(--active-box-shadow-light);
+}
+
+.container {
+  background-color:var(--background-light);
+  box-shadow: var(--shadow-light);
+}

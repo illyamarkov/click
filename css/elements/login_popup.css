@@ -1,0 +1,48 @@
+@import "elements/vars.css";
+
+@font-face {
+  font-family: legible-font;
+  src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
+
+#loginSignupForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: var(--color-light);
+    font: legible-font;
+    margin-bottom: 5px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    background-color: var(--background-light);
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px solid #ccc;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: var(--active-box-shadow-light);
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    color: var(--color-light);
+    outline: none;
+    border-color: var(--background-light);
+    box-shadow: var(--switch-shadow-light);
+  }
+
+  input[type="email"]:hover,
+  input[type="password"]:hover {
+    outline: none;
+    border-color: var(--background-light);
+    box-shadow: var(--button-shadow-light);
+  }
+
+  button[type="submit"] {
+    margin-top: 25px;
+  }
+  

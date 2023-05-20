@@ -1,0 +1,65 @@
+
+@import "main.css";
+
+@font-face {
+  font-family: legible-font;
+  src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+
+#chatbox {
+  background-color: var(--background-dark);
+  box-shadow: var(--active-box-shadow-dark);
+}
+
+.menu-bar {
+  background-color:var(--background-dark);
+  box-shadow:var(--shadow-dark);
+}
+
+.switch {
+  background-color: var(--background-dark);
+  box-shadow: var(--shadow-dark);
+  box-shadow: var(--switch-shadow-dark);
+}
+
+.switch:before {
+  background-color: var(--color-dark);
+  box-shadow: var(--switch-before-shadow-dark);
+}
+
+body, header, button {
+  background-color: var(--background-dark);
+  transition: var(--default-transition);
+}
+
+header {
+  box-shadow: var(--shadow-dark);
+}
+  
+h1, h2, p, button, #island {
+  color: var(--color-dark);
+  text-shadow: var(--text-shadow-dark);
+}
+button {
+  box-shadow: var(--button-shadow-dark);
+}
+button:hover {
+  box-shadow: var(--hover-shadow-dark);
+}
+button:active {
+  box-shadow: var(--active-box-shadow-dark);
+}
+
+.container {
+  background-color:var(--background-dark);
+  box-shadow: var(--shadow-dark);
+}

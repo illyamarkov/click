@@ -1,65 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>SIDEQUEST</title>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="icon" type="image/svg+xml" href="assets/ico.svg">
-    </head>
-    <body>
+  <head>
+    <!-- [metadata about the website] -->
+    <meta charset="UTF-8" />
+    <title>SIDEQUEST</title>
 
-      <div class="popup-container">
-        <div class="popup">
-          <div class="popup-header">
-            <h2 id="errorTYP">Popup Title</h2>
-            <button class="close-btn">&times;</button>
-          </div>
-          <div class="popup-content">
-            <p id="errorMSG">Popup Content Goes Here</p>
-            <div class="popup-image-container">
-              <img class="popup-image" src="" alt="Popup Image">
-            </div>
+    <!-- [imports] -->
+    <link rel="stylesheet" href="css/styles-light.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  </head>
+  <body>
+    <!-- Menu Bar -->
+    <nav class="menu-bar">
+      <!-- Dark/Light Mode Switch Container -->
+      <div class="switch-container">
+        <input type="checkbox" id="switch" />
+        <label for="switch" class="switch"></label>
+      </div>
+
+      <!-- Login Button Container -->
+      <div class="login-container">
+        <button class="login-button">Login</button>
+      </div>
+    </nav>
+
+    <!-- [chatbox] -->
+    <div id="chatbox" class="container">
+      <div id="island" class="container">
+        <h1 class="island">chatbox</h1>
+      </div>
+    </div>
+
+    <!-- [score and score buttons] -->
+    <header>
+      <h1>SCORE</h1>
+      <h2 id="count">connecting...</h2>
+      <div>
+        <button class="score-button" id="decrement-btn">&minus;</button>
+        <button class="score-button" id="increment-btn">&plus;</button>
+      </div>
+    </header>
+
+    <!-- [upgrades] -->
+    <div class="upgrades">
+      <div class="container">
+        <div id="island" class="container">
+          <h1 class="island">global</h1>
+        </div>
+        <button class="globalButton">Option 1</button>
+        <button class="globalButton">Option 2</button>
+        <button class="globalButton">Option 3</button>
+        <button class="globalButton">Option 4</button>
+        <button class="globalButton">Option 5</button>
+        <button class="globalButton">Option 6</button>
+        <button class="globalButton">Option 7</button>
+        <button class="globalButton">Option 8</button>
+        <button class="globalButton">Option 9</button>
+        <button class="globalButton">Option 10</button>
+      </div>
+
+      <div class="container">
+        <div id="island" class="container">
+          <h1 class="island">local</h1>
+        </div>
+        <button class="localButton">Option 1</button>
+        <button class="localButton">Option 2</button>
+        <button class="localButton">Option 3</button>
+        <button class="localButton">Option 4</button>
+        <button class="localButton">Option 5</button>
+        <button class="localButton">Option 6</button>
+        <button class="localButton">Option 7</button>
+        <button class="localButton">Option 8</button>
+        <button class="localButton">Option 9</button>
+        <button class="localButton">Option 10</button>
+      </div>
+    </div>
+
+    <!-- [error popup] -->
+    <div class="popup-container">
+      <div class="popup">
+        <div class="popup-header">
+          <h2 id="errorTYP">Popup Title</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="popup-content">
+          <p id="errorMSG">Popup Content Goes Here</p>
+          <div class="popup-image-container">
+            <img class="popup-image" src="" alt="Popup Image" />
           </div>
         </div>
       </div>
-      
-      <div class="container">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
-        <a href="#">Option 4</a>
-        <a href="#">Option 5</a>
-        <a href="#">Option 6</a>
-        <a href="#">Option 7</a>
-        <a href="#">Option 8</a>
-        <a href="#">Option 9</a>
-        <a href="#">Option 10</a>
+    </div>
+
+    <!-- login popup -->
+    <div class="popup-container" id="login-menu">
+      <div class="popup">
+        <div class="popup-header">
+          <h1 class="island">Login</h1>
+          <button class="close-btn" id="login-close">&times;</button>
+        </div>
+        <div class="popup-content">
+          <form id="loginSignupForm">
+            <!-- Input fields for login/signup form -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
+    </div>
 
-      <header>
-        <h1>SCORE</h1>
-        <h2 id="count">connecting...</h2> 
-        <div>
-          <button id="decrement-btn">&minus;</button>
-          <button id="increment-btn">&plus;</button>
-        </div> 
-      </header>
-
-      <div class="container">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
-        <a href="#">Option 4</a>
-        <a href="#">Option 5</a>
-        <a href="#">Option 6</a>
-        <a href="#">Option 7</a>
-        <a href="#">Option 8</a>
-        <a href="#">Option 9</a>
-        <a href="#">Option 10</a>
-      </div>
-
-      <script type="module" src="script.js"></script>
-      <script type="module" src="User_interaction.js"></script>
-
-    </body>
+    <!-- [js] -->
+    <script type="module" src="js/script.js"></script>
+  </body>
 </html>

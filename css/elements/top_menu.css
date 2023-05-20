@@ -1,0 +1,27 @@
+@import "theme_mode_switch.css";
+
+.menu-bar {
+    height: 50px;
+    padding: 10px;
+    position:fixed;
+    right:0;
+    top:0;
+    transition:var(--default-transition);
+    width:100%;
+    display: flex;
+    justify-content: right;
+    align-items: stretch;
+    gap: 15px;
+    z-index: 9998;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button {
+    padding: 8px 24px;
+    font-size: 1.5em;
+    font-family: legible-font;
+  }
