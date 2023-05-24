@@ -1,6 +1,7 @@
 @import "elements/vars.css";
 @import "elements/top_menu.css";
 @import "elements/login_popup.css";
+@import "elements/signup_popup.css";
 @import "elements/error_popup.css";
 @import "elements/chatbox.css";
 
@@ -42,6 +43,14 @@ body {
     font-family: legible-font;
 }
 
+.loggedIn {
+  display: none;
+}
+
+.privateScore {
+  margin-top: 60px;
+}
+
 button {
   border-radius: 25px;
   border: none;
@@ -50,11 +59,11 @@ button {
   font-size: 1.5em;
 }
 button:hover {
-  transform: translateY(-5px);
+  transform:scale(1.025);
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .2s ease-in-out;
 }
 button:active {
-  transform: translateY(0px);
+  transform:scale(0.975);
   transition: var(--default-transition), transform .3s ease-in-out, box-shadow .05s ease-in-out;
 }
 
@@ -131,4 +140,8 @@ h2 {
   align-items: center;
   padding: 20px;
   transition: var(--default-transition);
+}
+
+.usernameText {
+  font-size: 2.5em;
 }

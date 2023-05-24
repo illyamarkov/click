@@ -28,12 +28,17 @@
 
 .switch {
   background-color: var(--background-light);
-  box-shadow: var(--shadow-light);
   box-shadow: var(--switch-shadow-light);
 }
+
 .switch:before {
   background-color: var(--color-light);
   box-shadow: var(--switch-before-shadow-light);
+}
+
+.switch:hover:before {
+  background-color: var(--color-light);
+  box-shadow: var(--switch-before-shadow-light-hover);
 }
 
 body, header, button, .container a {

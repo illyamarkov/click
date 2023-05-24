@@ -5,7 +5,7 @@
   src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
 }
 
-#loginForm {
+#signupForm {
     display: flex;
     flex-direction: column;
   }
@@ -17,8 +17,9 @@
   }
 
   input[type="password"],
-  input[type="email"] {
-    background-color: var(--color-light);
+  input[type="email"],
+  input[type="input"] {
+    background-color: var(--background-light);
     padding: 10px;
     border-radius: 20px;
     border: 0px solid #ccc;
@@ -28,7 +29,8 @@
   }
   
   input[type="password"]:focus,
-  input[type="email"]:focus {
+  input[type="email"]:focus,
+  input[type="input"]:focus {
     color: var(--color-light);
     outline: none;
     border-color: var(--background-light);
@@ -36,7 +38,8 @@
   }
 
   input[type="password"]:hover,
-  input[type="email"]:hover {
+  input[type="email"]:hover,
+  input[type="input"]:hover {
     outline: none;
     border-color: var(--background-light);
     box-shadow: var(--button-shadow-light);

@@ -20,7 +20,12 @@
 
       <!-- Login Button Container -->
       <div class="login-container">
-        <button class="login-button">Login</button>
+        <button class="menu-button" id="login-button">Login</button>
+        <button class="menu-button" id="signup-button">Signup</button>
+      </div>
+      <!-- Username and other user info -->
+      <div class="loggedIn">
+        <h2 class='usernameText' id="usernameText">Connecting...</h2>
       </div>
     </nav>
 
@@ -32,14 +37,24 @@
     </div>
 
     <!-- [score and score buttons] -->
-    <header>
-      <h1>SCORE</h1>
-      <h2 id="count">connecting...</h2>
-      <div>
-        <button class="score-button" id="decrement-btn">&minus;</button>
-        <button class="score-button" id="increment-btn">&plus;</button>
-      </div>
-    </header>
+    <div>
+
+      <header>
+        <h1>SCORE</h1>
+        <h2 id="count">connecting...</h2>
+        <div>
+          <button class="score-button" id="decrement-btn">&minus;</button>
+          <button class="score-button" id="increment-btn">&plus;</button>
+        </div>
+      </header>
+  
+      <header class="privateScore">
+        <h2 id="private-count">login to view</h2>
+      </header>
+
+    </div>
+
+
 
     <!-- [upgrades] -->
     <div class="upgrades">
@@ -100,13 +115,33 @@
           <button class="close-btn" id="login-close">&times;</button>
         </div>
         <div class="popup-content">
-          <form id="loginSignupForm">
+          <form id="loginForm">
             <!-- Input fields for login/signup form -->
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email_login" name="email" required />
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required />
+            <input type="password" id="password_login" name="password" required />
             <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup-container" id="signup-menu">
+      <div class="popup">
+        <div class="popup-header">
+          <h1 class="island">Signup</h1>
+          <button class="close-btn" id="signup-close">&times;</button>
+        </div>
+        <div class="popup-content">
+          <form id="signupForm">
+            <!-- Input fields for login/signup form -->
+            <label for="email">Email:</label>
+            <input type="email" id="email_signup" name="email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password_signup" name="password" required />
+            <label for="username">Username (only 3 characters):</label>
+            <input type="input" id="username_signup" name="username" required />
+            <button type="submit">Create</button>
           </form>
         </div>
       </div>
